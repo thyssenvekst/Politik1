@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; font-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Leben 2035 · Demografie-Labor</title><meta name="description" content="Ein Entscheidungsspiel über Lebensentwürfe, Familienplanung und gesellschaftliche Rahmenbedingungen für PuG 11, Kapitel 1.2 (M6–M13).">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9IiMxMTJlMzYiLz48cGF0aCBkPSJNMTYgMTV2MzRoMzJ2LThIMjVWMTV6IiBmaWxsPSIjZGFmZjc5Ii8+PC9zdmc+Cg==">
+<style>:root{--sans:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;--ink:#112e36;--muted:#536970;--lime:#daff79;--blue:#d8edf5;--paper:#f2f6f5}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 var(--sans)}header{max-width:1240px;margin:auto;padding:24px 32px;display:flex;align-items:center;gap:24px;border-bottom:1px solid #cbd7d7}header>div{font-size:14px;letter-spacing:.08em;font-weight:700}small{display:block;letter-spacing:0;font-weight:400;color:var(--muted)}.brand{font:700 32px var(--sans);text-decoration:none;color:var(--ink)}.brand span{font-weight:400}header button{margin-left:auto}main{max-width:1180px;margin:38px auto;padding:0 24px;min-height:72vh}h1,h2,h3{font-family:var(--sans);line-height:1.12}h1{font-size:clamp(38px,5vw,68px);letter-spacing:-.05em;margin:14px 0 24px}h2{font-size:32px;letter-spacing:-.025em}h3{font-size:22px}p{margin:12px 0}.eyebrow{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.layout{display:grid;grid-template-columns:1.8fr 1fr;gap:28px}.panel{padding:32px;background:white;border:1px solid #cbd7d7;border-radius:20px}.dark{background:var(--ink);color:white;border:0}.dark p,.dark small{color:#c9d9de}.accent{color:var(--lime)}.tag{display:inline-block;background:var(--lime);padding:6px 12px;border-radius:30px;font-size:14px;font-weight:700;color:var(--ink)}button{font:600 16px var(--sans);cursor:pointer;color:var(--ink);background:var(--lime);border:1px solid transparent;border-radius:12px;padding:14px 22px;min-height:48px}button:hover{filter:brightness(.96)}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #0780a8;outline-offset:4px}.quiet{background:transparent;border-color:#b7c9cd}.choices{display:grid;gap:12px;margin-top:28px}.choice{text-align:left;background:white;border:1px solid #c2d1d3;padding:18px 20px;display:flex;gap:18px;align-items:flex-start}.choice:hover{border-color:#112e36;background:#eff8f0}.choice b{font:700 16px var(--sans);background:var(--blue);border-radius:8px;padding:6px 10px}.choice span{display:block}.choice small{font-size:14px;margin-top:4px}.progress{display:flex;gap:6px;margin:0 0 24px}.progress i{height:5px;background:#ccd9d9;flex:1;border-radius:3px}.progress i.done{background:#527832}.stats{display:grid;gap:22px;margin:28px 0}.stat .label{display:flex;justify-content:space-between;font-size:15px}.bar{height:8px;background:#ffffff28;border-radius:10px;margin-top:8px;overflow:hidden}.bar span{display:block;background:var(--lime);height:100%;transition:width .5s}.round{font:500 100px/1 var(--sans);color:#ffffff25;margin:25px 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.notice{padding:20px;border-radius:12px;background:var(--blue);margin-top:20px}.event{background:#fff2c8}.factor{font-weight:700}.summary{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:25px 0}.summary .panel{padding:24px}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:16px}td,th{text-align:left;border-bottom:1px solid #cbd7d7;padding:12px 8px;vertical-align:top}textarea{width:100%;min-height:100px;font:inherit;border:1px solid #b7c9cd;border-radius:10px;padding:12px;resize:vertical}label{display:block;margin:20px 0 8px;font-weight:600}.muted{color:var(--muted)}dialog{max-width:640px;width:calc(100% - 32px);border:0;border-radius:20px;padding:32px;color:var(--ink)}dialog::backdrop{background:#112e36aa}footer{padding:26px;text-align:center;color:var(--muted);font-size:14px}.timeline{border-left:2px solid #b6c8ce;padding-left:20px}.timeline p{margin:18px 0}.result{margin-top:24px}.introline{font-size:20px}.hint{font-size:14px;color:var(--muted)}@media(max-width:760px){header{padding:16px;gap:12px}header>div{font-size:12px}header button{padding:9px;font-size:14px}.layout,.summary{grid-template-columns:1fr}main{padding:0 16px;margin:24px auto}.panel{padding:24px}.round{display:none}h1{font-size:42px}table{font-size:14px}td,th{padding:10px 4px}}@media print{header,footer,button,.progress{display:none}main{max-width:none}.panel{break-inside:avoid}.dark{color:var(--ink);background:white}.dark p{color:var(--ink)}body{background:white;font-size:12pt}textarea{border:0;min-height:65px}h1{font-size:30pt}.layout{display:block}}
+
+.message{background:#eff4f8;border-left:4px solid #31809c;padding:20px;margin:24px 0;border-radius:0 12px 12px 0}.message small{font-size:14px}.material{border:1px solid #b9cec0;background:#f4faed;border-radius:14px;padding:22px;margin:24px 0}#archive{max-width:900px}header{flex-wrap:wrap}header button{margin-left:0}#history{margin-left:auto}@media(max-width:760px){header>div{flex:1}#history{margin-left:0}header button{flex:1}#archive{padding:20px}}
+
+.chat{padding:20px;background:#edf1f2;border-radius:14px;margin:24px 0}.bubble{padding:16px 18px;border-radius:14px;max-width:92%}.bubble.lea{background:#d8edf5;margin-right:8%}.bubble.jonas{background:#e1edc8;margin-left:8%}.discussion{border-top:1px solid #bccace;padding-top:16px}.sourcecard{border-top:1px solid #ffffff40;margin-top:30px;padding-top:24px}.sourcecard .eyebrow{line-height:1.6}.sourcecard small{display:block;line-height:1.6}.sourceline{margin-top:18px}.datachart{font-size:14px;margin:20px 0}.data-bar{height:14px;background:#ffffff22;margin:6px 0 14px;border-radius:4px}.data-bar span{display:block;height:100%;background:#daff79;border-radius:4px}.layout>aside{align-self:start;position:sticky;top:20px}@media(max-width:760px){.layout>aside{position:static}}@media print{.layout>aside{position:static}.sourcecard{border-color:#bbb}.data-bar span{background:#112e36}}
+
+.pageguide{font-size:14px;border-top:1px solid #81999b;padding-top:18px;margin-top:24px;line-height:1.7}.pageguide p{margin-bottom:0}
+
+.choice[aria-pressed="true"]{border:2px solid var(--ink);background:#eff8f0;box-shadow:inset 6px 0 0 #527832}
+.choice em{display:block;font-style:normal;font-size:13px;color:#527832;font-weight:700;margin-top:4px}
+button:disabled{opacity:.45;cursor:not-allowed;filter:none}
+.checks{list-style:none;padding:0;margin:8px 0 0;font-size:14px;color:#7a4a12;display:flex;flex-wrap:wrap;gap:4px 18px}
+.checks li::before{content:"○ "}
+.checks li.ok{color:#3d6b1f}.checks li.ok::before{content:"✓ "}
+.decide{border-top:1px solid #cbd7d7;margin-top:28px;padding-top:8px}
+.gate{margin-top:28px;padding:20px;border-radius:14px;background:#f6f8f8;border:1px solid #cbd7d7}
+.gate .missing{font-size:15px;margin:0 0 12px;color:#7a4a12}
+.gate .missing.done{color:#3d6b1f}
+.privacy{border:1px solid #b7c9cd;border-radius:14px;padding:18px 20px;margin-top:22px;font-size:15px;background:#fbfdfd}
+.privacy b{display:block;margin-bottom:4px}
+.teacher{background:#fff2c8;border-radius:12px;padding:12px 16px;margin:0 0 20px;font-size:15px}
+details.prev{margin:24px 0;border:1px dashed #b7c9cd;border-radius:12px;padding:14px 18px;background:#fbfdfd}
+details.prev summary{cursor:pointer;font-weight:600}
+details.prev p{white-space:pre-wrap}
+.readonly{white-space:pre-wrap;background:#f6f8f8;border-radius:10px;padding:12px 14px;margin:6px 0 14px}
+.netz{display:flex;gap:12px;align-items:flex-start;margin:20px 0;font-weight:600}
+.netz input{width:22px;height:22px;margin-top:2px;flex:none}
+.carried{background:#eef3e6}
+.hidden{display:none}
+header .quiet{padding:8px 12px;min-height:40px;font-size:14px}header{gap:10px 24px}@media(min-width:761px){header .quiet+.quiet{margin-left:-14px}}
+@media print{.checks,.gate,.privacy,.teacher,details.prev summary{display:none}textarea{overflow:visible}}
+
+/* ---------- iPad / Touch ---------- */
+html{-webkit-text-size-adjust:100%}
+body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+header .quiet{min-height:44px}
+.choice{min-height:68px}
+textarea{font-size:17px;line-height:1.5}
+dialog{max-height:88vh;overflow:auto;overscroll-behavior:contain}
+@media(hover:none){button:hover{filter:none}.choice:hover{border-color:#c2d1d3;background:#fff}.choice[aria-pressed="true"]:hover{border-color:var(--ink);background:#eff8f0}}
+.saved{font-size:13px;color:var(--muted);white-space:nowrap}
+.saved.on{color:#3d6b1f}.saved.warn{color:#8a3b12;white-space:normal}
+.mstats{display:none}
+.notice.pause{background:#eef3e6;border:1px solid #c9dbb4}
+.notice.pause button{margin-top:6px}
+@media(max-width:1024px){
+ .layout{grid-template-columns:1fr}.round{display:none}
+ .stats-wrap{display:none}
+ .mstats{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;padding:14px 18px;border-radius:14px;background:var(--ink);color:#fff;margin:0 0 24px;font-size:14px}
+ .mstats .label{display:flex;justify-content:space-between;gap:8px}
+ .mstats .bar{height:6px;margin-top:5px}
+}
+
+/* ---------- Startseite ---------- */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+body.is-start{background:var(--ink)}
+body.is-start main{max-width:none;margin:0;padding:0;min-height:0}
+body.is-start header{color:#fff;border-color:#ffffff26}
+body.is-start .brand{color:#fff}
+body.is-start header small{color:#9fb7bd}
+body.is-start header .quiet{color:#fff;border-color:#ffffff4d}
+body.is-start .saved.on{color:var(--lime)}
+body.is-start footer{color:#7f9aa1;background:var(--ink)}
+body.is-start .teacher{max-width:1180px;margin:16px auto}
+.hero{position:relative;min-height:calc(100vh - 92px);min-height:calc(100svh - 92px);overflow:hidden;background:var(--ink);color:#fff;isolation:isolate;touch-action:pan-y}
+#swarm{position:absolute;inset:0;width:100%;height:100%;z-index:-1;display:block}
+.hero-inner{max-width:1240px;margin:0 auto;padding:clamp(28px,7vh,80px) 32px 200px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#c9d9de;margin:0 0 20px}
+.kicker .dot{width:10px;height:10px;border-radius:50%;background:var(--lime);animation:ping 1.8s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 #daff79aa}100%{box-shadow:0 0 0 14px #daff7900}}
+.kinetic{font-size:clamp(40px,6.1vw,104px);line-height:.98;letter-spacing:-.05em;margin:0;max-width:60%;font-weight:800}
+.kinetic .line{display:block;overflow:hidden;padding:.02em 0 .12em}
+.kinetic .word{display:inline-block;white-space:nowrap}
+.ch{display:inline-block;transform:translateY(115%) rotate(14deg);opacity:0;animation:rise .95s cubic-bezier(.2,.9,.1,1.08) forwards;animation-delay:calc(var(--i) * 38ms + 120ms);transform-origin:50% 80%}
+@keyframes rise{to{transform:none;opacity:1}}
+.kinetic.done .ch{animation:none;transform:none;opacity:1;transform-origin:50% 55%}
+.kinetic.done .ch.flip{animation:flip .85s cubic-bezier(.3,1.5,.4,1)}
+@keyframes flip{0%{transform:none}45%{transform:rotateX(180deg) scale(1.1);color:var(--lime)}100%{transform:rotateX(360deg)}}
+.kinetic .q{font-size:clamp(22px,2.7vw,40px);letter-spacing:-.02em;font-weight:600;color:#c9d9de;margin-top:.55em;opacity:0;animation:fadein .8s 1.3s forwards;overflow:visible}
+@keyframes fadein{to{opacity:1}}
+.roller{display:inline-block;height:1.15em;overflow:hidden;vertical-align:bottom;color:var(--lime)}
+.roll{display:flex;flex-direction:column;transition:transform .7s cubic-bezier(.7,-.35,.25,1.35)}
+.roll span{height:1.15em;line-height:1.15em;white-space:nowrap}
+.caption{min-height:1.6em;margin:26px 0 0;font-size:16px;color:var(--lime);opacity:0;transition:opacity .45s}
+.caption.on{opacity:1}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:26px}
+button.big{font-size:19px;padding:18px 34px;min-height:62px;border-radius:40px;animation:pulse 2.6s 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #daff7980}70%{box-shadow:0 0 0 18px #daff7900}100%{box-shadow:0 0 0 0 #daff7900}}
+button.ghost{background:transparent;color:#fff;border-color:#ffffff59;border-radius:40px;min-height:62px;padding:0 26px}
+.where{width:100%;margin:2px 0 0;font-size:15px;color:#9fb7bd}
+.marquee{position:absolute;left:-6%;right:-6%;bottom:70px;transform:rotate(-2.4deg);background:var(--lime);color:var(--ink);overflow:hidden;font-weight:800;font-size:clamp(18px,2vw,26px);padding:12px 0;z-index:2;letter-spacing:-.01em}
+.marquee.m2{bottom:52px;transform:rotate(1.7deg);background:#0c2229;color:#fff;font-weight:600;z-index:1;border-block:1px solid #ffffff2e}
+.track{display:inline-flex;white-space:nowrap;animation:marq 40s linear infinite}
+.m2 .track{animation-direction:reverse;animation-duration:55s}
+.track span{padding:0 18px}
+@keyframes marq{to{transform:translateX(-50%)}}
+.prelude{background:var(--paper);color:var(--ink);padding:60px 32px 48px}
+.prelude-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:40px}
+.prelude h2{font-size:24px;margin:0 0 12px}
+.prelude p{font-size:16px}
+.timebar{display:flex;height:30px;border-radius:8px;overflow:hidden;margin:18px 0 14px;gap:3px}
+.timebar i{display:block;height:100%}
+.ta{background:var(--ink)}.tb{background:#31809c}.tc{background:#9cc45c}.td{background:var(--lime)}
+.plan{list-style:none;padding:0;margin:0;font-size:15px}
+.plan li{padding:7px 0;border-bottom:1px solid #cbd7d7}
+.plan b{display:inline-block;min-width:82px}
+.plan li:nth-child(1) b{color:var(--ink)}.plan li:nth-child(2) b{color:var(--ink)}
+@media(max-width:899px){.kinetic{max-width:none;font-size:clamp(40px,10vw,84px)}.hero-inner{padding:32px 24px 44vh}.hero{min-height:calc(100svh - 124px)}}
+@media(max-width:1024px){.prelude-inner{grid-template-columns:1fr;gap:28px}}
+@media(prefers-reduced-motion:reduce){.ch,.kinetic .q{animation:none;transform:none;opacity:1}.track{animation:none}.roll{transition:none}button.big,.kicker .dot{animation:none}}
+@media print{.mstats,.saved,.notice.pause{display:none}}
+
+/* ---------- Spielwerte erklären ---------- */
+.legend{margin-top:18px;font-size:14px}
+.legend summary{cursor:pointer;font-weight:700;color:var(--lime);min-height:44px;display:flex;align-items:center}
+.legend ul{list-style:none;padding:0;margin:4px 0 10px}
+.legend li{padding:7px 0;border-top:1px solid #ffffff22}
+.legend li span{display:block;opacity:.75;font-size:13px}
+.legend p{font-size:14px;margin:8px 0}
+.mlegend{display:none}
+@media(max-width:1024px){.mlegend{display:block;margin:-12px 0 20px}.mlegend .legend{background:#f6f8f8;border:1px solid #cbd7d7;border-radius:12px;padding:2px 16px}.mlegend .legend summary{color:var(--ink)}.mlegend .legend li{border-color:#cbd7d7}}
+.deltas{margin:24px 0;padding:20px;border-radius:14px;border:1px solid #cbd7d7;background:#fff}
+.deltas h3{margin:0 0 12px}
+.dtable{display:grid;gap:0}
+.drow{display:grid;grid-template-columns:minmax(150px,1.2fr) 90px 1.6fr;gap:12px;align-items:baseline;padding:9px 0;border-top:1px solid #e1e9e9;font-size:15px}
+.drow .dval{font-variant-numeric:tabular-nums;white-space:nowrap}
+.drow .dwhy{color:var(--muted);font-size:14px}
+.drow.up .dval b{color:#3d6b1f}.drow.up .dval b::after{content:" ▲";font-size:.7em}
+.drow.down .dval b{color:#a3461a}.drow.down .dval b::after{content:" ▼";font-size:.7em}
+.drow.same{opacity:.6}
+@media(max-width:560px){.drow{grid-template-columns:1fr auto}.drow .dwhy{grid-column:1/-1;margin-top:-6px}}
+.vcharts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0 8px}
+.vcharts figure{margin:0;padding:14px 14px 6px;border:1px solid #cbd7d7;border-radius:14px;background:#fff}
+.vcharts figcaption{display:flex;justify-content:space-between;gap:8px;font-size:15px;margin-bottom:4px}
+.vcharts figcaption span{color:var(--muted);font-variant-numeric:tabular-nums}
+.vcharts svg{width:100%;height:auto;display:block}
+.vcharts .grid{stroke:#e1e9e9;stroke-width:1}
+.vcharts .ax{font-size:10px;fill:#7a8e93}
+.vcharts polyline{fill:none;stroke-width:2.5;stroke-linejoin:round}
+polyline.sa{stroke:var(--ink)}circle.sa{fill:var(--ink)}
+polyline.sb{stroke:#6b9b25;stroke-dasharray:6 4}circle.sb{fill:#6b9b25}
+.vlegend{font-size:14px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.vlegend span{display:inline-block;width:26px;height:0;border-top:3px solid var(--ink);margin-left:8px}
+.vlegend .kb{border-top:3px dashed #6b9b25}
+@media(max-width:620px){.vcharts{grid-template-columns:1fr}}
+@media print{.legend,.mlegend,.deltas .hint{display:none}.vcharts{grid-template-columns:repeat(2,1fr)}}
+
+@media(max-width:1280px){.stime{display:none}header{gap:10px 16px}}
+
+/* ---------- v4 ---------- */
+.pre{white-space:pre-wrap}
+.tablewrap{overflow-x:auto}
+textarea.code{min-height:90px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;word-break:break-all;margin:10px 0}
+dialog h3{margin-top:22px}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,40px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:30px;font-size:15px;opacity:0;transition:.3s;pointer-events:none;z-index:50;max-width:90vw}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.chaplist{display:grid;gap:8px;margin:16px 0}
+.chap{display:flex;justify-content:space-between;align-items:center;gap:14px;text-align:left;background:#fff;color:var(--ink);border:1px solid #c2d1d3;border-radius:12px;padding:12px 16px;min-height:60px;font-weight:400}
+.chap .cl b{display:block;font-size:16px}.chap .cl small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.chap .cs{font-size:13px;white-space:nowrap;font-weight:700}
+.chap.done .cs{color:#3d6b1f}.chap.now{border:2px solid var(--ink);background:#eff8f0}.chap.now .cs{color:var(--ink)}
+.chap.next,.chap.open{background:#f6f8f8}.chap.next .cs,.chap.open .cs{color:var(--muted)}
+fieldset.pick{border:1px solid #cbd7d7;border-radius:12px;padding:10px 14px 14px;margin:12px 0;display:grid;gap:8px}
+fieldset.pick legend{font-weight:700;padding:0 6px;font-size:15px}
+.pk{background:#fff;color:var(--ink);border:1px solid #c2d1d3;border-radius:10px;text-align:left;padding:10px 14px;min-height:46px;font-weight:400}
+.pk[aria-pressed="true"]{border:2px solid var(--ink);background:#eff8f0;box-shadow:inset 5px 0 0 #527832}
+.eh{margin:6px 0 18px;background:#fff7dc;border:1px solid #ecd78f;border-radius:10px;padding:8px 14px;font-size:14px}
+.eh summary{cursor:pointer;font-weight:700;color:#7a5a00}
+.ehrow{border-top:1px solid #e1e9e9;padding:10px 0;font-size:14px}
+.te{background:#527832}
+@media print{.eh{display:none}#toast{display:none}}
+
+/* Startseite: Buchstaben verfärben sich unter Maus/Finger */
+.kinetic .ch{transition:color .9s ease,text-shadow .9s ease}
+.kinetic .ch.hot{color:var(--hc,#daff79);text-shadow:0 0 .35em color-mix(in srgb,var(--hc,#daff79) 55%,transparent);transition:color .06s,text-shadow .06s}
+.kinetic.done .ch{transition:color .9s ease,text-shadow .9s ease,transform .45s cubic-bezier(.3,1.6,.5,1)}
+.kinetic.done .ch.hot{transform:translateY(-.07em) rotate(-5deg) scale(1.06);transition:color .06s,text-shadow .06s,transform .12s}
+.hero{cursor:crosshair}.hero button,.hero a{cursor:pointer}
+.chap.begun .cs{color:#a3461a}
+.kinetic.done .line{overflow:visible}
+
+/* =====================================================================
+   v6 · Tiefe, Dunkelraum, Bewegung – für alle Seiten
+   ===================================================================== */
+@property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+body{background:#0b2128}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(900px 600px at 88% -10%,rgba(218,255,121,.11),transparent 60%),radial-gradient(800px 700px at -10% 35%,rgba(127,214,255,.10),transparent 60%),radial-gradient(700px 500px at 60% 115%,rgba(201,164,255,.09),transparent 60%),#0b2128}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+header{color:#fff;border-color:#ffffff1f}
+.brand{color:#fff}header small{color:#9fb7bd}
+header .quiet{color:#fff;border-color:#ffffff40;background:#ffffff08}
+@media(hover:hover){header .quiet:hover{background:#ffffff1a}}
+.saved{color:#9fb7bd}.saved.on{color:var(--lime)}
+footer{color:#7f9aa1}
+main{max-width:1240px}
+.teacher{max-width:1240px;margin:0 auto 18px}
+
+/* Opener */
+.opener{position:relative;min-height:340px;border-radius:28px;overflow:hidden;background:#0f2a32;color:#fff;margin:0 0 -56px;padding:40px 46px 100px;isolation:isolate;box-shadow:0 40px 90px -40px #000,inset 0 0 0 1px #ffffff17;touch-action:pan-y}
+.opener canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;display:block}
+.opener::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(15,42,50,.96) 0%,rgba(15,42,50,.7) 42%,rgba(15,42,50,0) 68%)}
+.op-inner{position:relative;max-width:60%}
+.op-kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:700;display:flex;align-items:center;gap:10px}
+.op-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);flex:none;animation:ping 1.8s infinite}
+.kin{font-size:clamp(34px,5.2vw,74px);line-height:1.02;letter-spacing:-.045em;margin:16px 0 20px;color:#fff;font-weight:800}
+.kin .word{display:inline-block;white-space:nowrap}
+.kin .ch{display:inline-block;transform:none;opacity:1;transform-origin:50% 60%;animation:kinrise .8s cubic-bezier(.2,.9,.1,1.06) both;animation-delay:calc(var(--i) * 20ms);transition:color .9s,text-shadow .9s,transform .45s cubic-bezier(.3,1.6,.5,1)}
+.kin .ch.hot{color:var(--hc,#daff79);text-shadow:0 0 .35em color-mix(in srgb,var(--hc,#daff79) 55%,transparent);transform:translateY(-.07em) rotate(-5deg) scale(1.06);transition:color .05s,text-shadow .05s,transform .12s}
+@keyframes kinrise{from{opacity:0;translate:0 .55em}to{opacity:1;translate:0 0}}
+.op-chips{display:flex;flex-wrap:wrap;gap:8px}
+.op-chips span{font-size:13px;padding:6px 12px;border-radius:30px;background:#ffffff12;border:1px solid #ffffff26;color:#e4eef0;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.lifeline{position:absolute;left:46px;right:46px;bottom:70px;height:2px}
+.ll-track{position:absolute;inset:0;background:#ffffff26;border-radius:2px}
+.ll-track i{display:block;height:100%;background:linear-gradient(90deg,#7fd6ff,var(--lime));box-shadow:0 0 14px #daff79aa;border-radius:2px;animation:grow 1.2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{max-width:0}to{max-width:100%}}
+.ll{position:absolute;top:1px;transform:translate(-50%,-50%)}
+.ll b{display:block;width:12px;height:12px;border-radius:50%;background:#0f2a32;border:2px solid #ffffff55}
+.ll em{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-style:normal;font-size:12px;color:#9fb7bd;font-weight:700}
+.ll.done b{background:var(--lime);border-color:var(--lime);box-shadow:0 0 10px #daff7999}
+.ll.carried b{border:2px dashed var(--lime)}
+.ll.now b{width:18px;height:18px;background:#fff;border-color:#fff;animation:ping 1.6s infinite}
+.ll.now em{color:#fff;font-size:13px}
+
+/* Karten mit Tiefe */
+.layout{position:relative;z-index:1;gap:24px;padding:0 18px}
+.panel{background:#fbfdfd;border:0;border-radius:24px;box-shadow:0 0 0 1px #ffffff12,0 34px 70px -34px rgba(0,0,0,.65),inset 0 1px 0 #fff}
+.main-panel{position:relative;z-index:1;margin:0 18px}.layout .main-panel{margin:0}
+.panel.dark.side{background:linear-gradient(165deg,#1a4652,#0f2c34 55%,#0d262d);border:1px solid #ffffff17}
+.layout>aside{position:static}
+.introline{font-size:20px;line-height:1.55;margin-top:6px}
+.notice{border-radius:16px;background:#e9f4f8;box-shadow:inset 0 0 0 1px #d2e6ee}
+.notice.insight{background:linear-gradient(135deg,#112e36,#22525e);color:#fff;box-shadow:0 24px 40px -28px #000}
+.notice.insight p{color:#d6e5e8}.notice.insight .eyebrow{color:var(--lime)}.notice.insight .factor{color:#fff;font-size:20px}
+.notice.bchange{background:linear-gradient(135deg,#eef9d9,#e4f3fb);box-shadow:inset 0 0 0 1px #cfe5b4}
+.notice.bchange .eyebrow{color:#3d6b1f}
+
+/* E-Mail & Ticker */
+.mail{border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 22px 44px -28px rgba(17,46,54,.55);margin:28px 0;border:1px solid #dfe8e8}
+.mail-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:#eef3f4;border-bottom:1px solid #dfe8e8;font-size:12px;color:var(--muted)}
+.mail-bar i{width:10px;height:10px;border-radius:50%;background:#ff6b5e}.mail-bar i:nth-child(2){background:#ffc13b}.mail-bar i:nth-child(3){background:#2fd06b}.mail-bar span{margin-left:8px}
+.mail-head{padding:12px 22px 2px;font-size:15px}
+.mail-head div{display:flex;gap:12px;padding:6px 0;border-bottom:1px dashed #e1e9e9}
+.mail-head span{min-width:66px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.1em;padding-top:2px}
+.mail-body{padding:10px 22px 18px}.mail-body small,.ticker small{font-size:13px;color:var(--muted)}
+.ticker{position:relative;margin:28px 0;padding:18px 22px 18px 30px;border-radius:18px;background:#fff;border:1px solid #dfe8e8;box-shadow:0 22px 44px -28px rgba(17,46,54,.55);overflow:hidden}
+.ticker::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:repeating-linear-gradient(-45deg,#ff6b5e 0 8px,#ffd84d 8px 16px)}
+.ticker h3{margin:8px 0 6px}
+.tk-bar{display:flex;gap:12px;align-items:center;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.live{display:inline-flex;align-items:center;gap:6px;background:#ff4d3d;color:#fff;padding:3px 10px;border-radius:20px}
+.live i{width:7px;height:7px;border-radius:50%;background:#fff;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.2}}
+.tk-src{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* Chat als Smartphone */
+.phone{margin:28px 0 16px;border-radius:28px;background:#0f2a32;padding:10px;box-shadow:0 30px 60px -34px rgba(0,0,0,.7)}
+.ph-head{display:flex;align-items:center;gap:10px;color:#fff;padding:8px 12px 12px}
+.ph-head b{display:block;font-size:15px}.ph-head small{color:#9fb7bd;font-size:12px}
+.ph-head .av+.av{margin-left:-20px;box-shadow:0 0 0 3px #0f2a32}
+.ph-body{background:radial-gradient(circle at 20% 10%,#f6fbf2,#e8f1f1);border-radius:20px;padding:18px 14px;display:grid;gap:12px}
+.av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.av.l{background:#7fd6ff;color:#0f2a32}.av.j{background:var(--lime);color:#0f2a32}
+.msg{display:flex;gap:10px;align-items:flex-end}
+.msg p{margin:0;padding:12px 16px;border-radius:18px;max-width:84%;box-shadow:0 2px 6px rgba(17,46,54,.08)}
+.msg.lea p{background:#fff;border-bottom-left-radius:5px}
+.msg.jonas{justify-content:flex-end}.msg.jonas p{background:#e4f7b8;border-bottom-right-radius:5px}
+.typing{display:none;gap:4px;justify-self:end;padding:12px 16px;background:#e4f7b8;border-radius:18px;margin-right:44px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#5a7f2e;animation:bob 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes bob{50%{transform:translateY(-4px);opacity:.5}}
+.rv-on .phone .typing{display:flex;opacity:0;height:0;padding:0 16px;overflow:hidden}
+.rv-on .phone.in .typing{animation:typing 1.3s .45s both}
+@keyframes typing{0%{opacity:0;height:0;padding:0 16px}12%,82%{opacity:1;height:31px;padding:12px 16px}100%{opacity:0;height:0;padding:0 16px}}
+.rv-on .phone .msg p{opacity:0}
+.rv-on .phone.in .msg.lea p{animation:pop .45s .15s both}
+.rv-on .phone.in .msg.jonas p{animation:pop .45s 1.7s both}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.95)}to{opacity:1;transform:none}}
+.discuss{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;border-radius:18px;background:linear-gradient(135deg,#112e36,#22525e);color:#fff;margin:0 0 28px;box-shadow:0 24px 40px -30px #000}
+.discuss p{color:#d6e5e8;margin:4px 0 0}
+.dq{width:42px;height:42px;border-radius:12px;background:var(--lime);color:var(--ink);display:grid;place-items:center;font-weight:900;font-size:22px;flex:none;transform:rotate(-6deg)}
+
+/* Buch-Auftrag */
+.material.book{display:grid;grid-template-columns:84px 1fr;padding:0;overflow:hidden;border:0;background:#fffdf6;box-shadow:0 0 0 1px #ebe3cb,0 26px 54px -34px rgba(17,46,54,.6);border-radius:20px;position:relative;margin:30px 0}
+.material.book::before{content:"";position:absolute;inset:0 0 0 84px;background:repeating-linear-gradient(transparent 0 31px,#f1ead6 31px 32px);opacity:.55;pointer-events:none}
+.stamp{background:linear-gradient(180deg,#112e36,#22525e);color:var(--lime);display:flex;flex-direction:column;align-items:center;gap:8px;padding:22px 6px;font-weight:900;font-size:22px;letter-spacing:-.03em;position:relative}
+.stamp::after{content:"";position:absolute;right:-10px;top:26px;width:20px;height:20px;background:#fffdf6;transform:rotate(45deg);box-shadow:0 0 0 1px #ebe3cb}
+.stamp span{line-height:1}
+.bk{padding:24px 26px 20px 30px;position:relative}
+.bk textarea{background:#fff}
+.quote{font-style:italic;border-left:3px solid var(--lime);padding-left:14px;color:#3a5259}
+
+/* Entscheidungen */
+.decide{border-top:0;margin-top:34px;padding:26px;border-radius:20px;background:linear-gradient(180deg,#eef5f5,#fbfdfd);box-shadow:inset 0 0 0 1px #dbe6e6}
+.choice{position:relative;overflow:hidden;border-radius:16px;transition:transform .25s,box-shadow .25s,border-color .2s;box-shadow:0 12px 26px -20px rgba(17,46,54,.6);background:#fff;will-change:transform}
+.choice::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(218,255,121,.45),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+@media(hover:hover){.choice:hover::before{opacity:1}.choice:hover{background:#fff;box-shadow:0 24px 40px -24px rgba(17,46,54,.6)}}
+.choice>*{position:relative}
+.choice b{background:var(--ink);color:var(--lime);border-radius:10px;min-width:40px;text-align:center}
+.choice[aria-pressed="true"]{border:2px solid transparent;background:linear-gradient(#f3fbe6,#f3fbe6) padding-box,conic-gradient(from var(--ang),#daff79,#7fd6ff,#c9a4ff,#ff9b5e,#daff79) border-box;box-shadow:0 18px 36px -22px rgba(82,120,50,.8);animation:spinb 4s linear infinite}
+@keyframes spinb{to{--ang:360deg}}
+
+/* Pflicht-Leiste */
+.gate{position:sticky;bottom:12px;z-index:5;display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:rgba(15,42,50,.93);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#fff;border:1px solid #ffffff21;border-radius:20px;padding:14px 16px;box-shadow:0 22px 44px -22px #000}
+.gate .missing{flex:1;margin:0;color:#ffd7a8;font-size:14px;min-width:180px}.gate .missing.done{color:var(--lime)}
+.g-ring{--p:0;width:54px;height:54px;border-radius:50%;background:conic-gradient(var(--lime) calc(var(--p) * 360deg),#ffffff22 0);display:grid;place-items:center;flex:none}
+.g-ring span{width:42px;height:42px;border-radius:50%;background:#0f2a32;display:grid;place-items:center;font-size:13px;font-weight:800}
+.gate>button,.gate .actions{margin-left:auto}
+.gate .quiet{color:#fff;border-color:#ffffff40}
+.gate .hint{color:#9fb7bd;width:100%;margin:0}
+
+/* Werte */
+.bar span{background:linear-gradient(90deg,#7fd6ff,var(--lime));box-shadow:0 0 12px #daff7966;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.stat b,.mstats b{transition:color .6s}.stat b.up,.mstats b.up{color:var(--lime)}.stat b.down,.mstats b.down{color:#ffb38a}
+.deltas{border:0;background:#fff;box-shadow:0 0 0 1px #dfe8e8,0 24px 44px -30px rgba(17,46,54,.55);border-radius:20px}
+.rv-on .deltas .drow{opacity:0;transform:translateX(-14px)}
+.rv-on .deltas.in .drow{animation:slidein .5s both;animation-delay:calc(.15s + var(--d) * .12s)}
+@keyframes slidein{to{opacity:1;transform:none}}
+
+/* Ereigniskarte */
+.evcard{perspective:1100px;margin:26px 0}
+.ev-inner{position:relative;padding:28px 34px;border-radius:22px;background:linear-gradient(135deg,#fff6d6,#ffe1a1);box-shadow:0 30px 50px -30px rgba(120,80,0,.6),inset 0 0 0 1px #f0d48c;transform-origin:left center}
+.ev-inner .eyebrow{color:#8a5a00}
+.ev-c{position:absolute;top:10px;left:14px;font-weight:900;font-size:22px;color:#c9930f}.ev-c.b{top:auto;left:auto;bottom:10px;right:14px;transform:rotate(180deg)}
+.rv-on .evcard:not(.in) .ev-inner{opacity:0}
+.rv-on .evcard.in .ev-inner{animation:flipin 1s cubic-bezier(.2,.9,.2,1.1) .25s both}
+@keyframes flipin{from{transform:rotateY(-85deg);opacity:0}to{transform:none;opacity:1}}
+button.big-next{font-size:18px;padding:16px 28px;border-radius:40px;box-shadow:0 14px 30px -14px rgba(82,120,50,.9)}
+
+/* Quellen */
+.srcs{margin-top:28px;border-top:1px solid #ffffff26;padding-top:22px}
+.src{background:#ffffff0d;border:1px solid #ffffff1c;border-radius:16px;padding:14px 16px;margin-top:12px;position:relative;overflow:hidden;transition:transform .25s}
+.src::before{content:"";position:absolute;inset:0;background:radial-gradient(200px circle at var(--mx,50%) var(--my,0%),rgba(127,214,255,.18),transparent 60%);pointer-events:none}
+.src-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;position:relative}
+.src-top b{font-size:26px;color:var(--lime);letter-spacing:-.03em}
+.src-top span{font-size:12px;color:#9fb7bd;text-align:right}
+.src p{font-size:14px;margin:7px 0;color:#d6e5e8;position:relative}
+.src-y span,.src-l span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7fd6ff;font-weight:700}
+
+/* Einblenden beim Scrollen */
+.rv-on .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv-on .rv.in{opacity:1;transform:none}
+.rv-on .vcharts figure svg{clip-path:inset(0 100% 0 0);transition:clip-path 1.6s cubic-bezier(.4,.1,.2,1) .2s}
+.rv-on .vcharts figure.in svg{clip-path:inset(0 0 0 0)}
+.timeline{border-left:2px solid var(--lime)}
+.timeline p{position:relative}.timeline p::before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px #fbfdfd}
+
+@media(max-width:760px){
+ .opener{padding:28px 22px 96px;border-radius:22px;min-height:300px;margin-bottom:-48px}
+ .op-inner{max-width:none}
+ .opener::after{background:linear-gradient(180deg,rgba(15,42,50,.55),rgba(15,42,50,.82))}
+ .lifeline{left:26px;right:26px}
+ .layout{padding:0 6px}.main-panel{margin:0 6px}
+ .material.book{grid-template-columns:1fr}.material.book::before{inset:0}
+ .stamp{flex-direction:row;justify-content:flex-start;padding:10px 20px}.stamp::after{display:none}
+ .bk{padding:20px}
+ .gate{bottom:8px}
+}
+@media(prefers-reduced-motion:reduce){.kin .ch,.ll-track i,.ll.now b,.op-kicker::before,.choice[aria-pressed="true"]{animation:none!important}}
+@media print{body::before,body::after,.opener,.gate .g-ring,.discuss .dq{display:none!important}body{background:#fff}.rv,.rv-on .rv{opacity:1!important;transform:none!important}.rv-on .phone .msg p{opacity:1!important}.typing{display:none!important}.panel{box-shadow:none}.gate{position:static;background:none;color:var(--ink)}.phone{background:none;box-shadow:none}.vcharts svg{clip-path:none!important}.layout{padding:0}}
+
+.gate.static{position:relative;bottom:auto}
+</style></head><body><header><a href="#" class="brand" aria-label="Leben 2035">L<span>2035</span></a><div>DEMOGRAFIE-LABOR <small>PuG · Kapitel 1.2</small></div><span id="saved" class="saved" aria-live="polite"></span><button class="quiet" id="chapters">Kapitel</button><button class="quiet" id="saveState">Sichern</button><button class="quiet" id="loadState">Laden</button><button class="quiet" id="help">Spielinfo</button><input type="file" id="loadFile" accept=".json,.txt,application/json,text/plain" class="hidden" aria-hidden="true" tabindex="-1"></header>
+<main id="app"></main>
+<dialog id="info"><h2>Spielauftrag und Hefteintrag</h2>
+<p><b>Arbeiten Sie zu zweit und erstellen Sie schriftlich einen eigenen Hefteintrag aus dem Spiel.</b> Grundlage ist Kapitel 1.2 „Wertewandel und Vielfalt an Lebensentwürfen – Ursachen der Bevölkerungsentwicklung“ mit den Materialien <b>M6 bis M13 (S. 20–25)</b>. Das Spiel führt Sie durch die Einstiegsaufgaben (S. 20) und die Aufgaben 1–11 (S. 25).</p>
+<p><b>Seitenübersicht:</b> M6: S. 20 · M7 und M8: S. 21 · M9 und M10: S. 22 · M11 und M12: S. 23 · M13: S. 24–25 · Aufgaben: S. 25.</p>
+<p><b>So spielen Sie:</b> Im Einstieg bearbeiten Sie M6 und M7. Danach hat jede Lebensphase zwei Schritte: zuerst der Materialauftrag, dann Entscheidung und Begründung. Erst wenn alle Pflichtfelder vollständig sind, geht es weiter. Unter jedem Feld sehen Sie, was noch fehlt.</p>
+<p><b>Rollen:</b> In den Runden 1, 3, 5 und 7 begründet Partner A und Partner B nennt einen Nachteil, in den Runden 2, 4 und 6 umgekehrt.</p>
+<p><b>Szenario B:</b> Danach spielen Sie denselben Lebensweg unter veränderten Bedingungen. Phasen, in denen sich nichts ändert, werden übernommen.</p>
+<p><b>Kapitel:</b> Über „Kapitel“ lesen Sie erledigte Phasen nach, holen den Einstieg nach oder springen zu einer späteren Phase, z. B. wenn Sie schon mit einer älteren Version angefangen haben.</p>
+<p><b>Zeitrahmen (Richtwert):</b> Einstieg ca. 20 Minuten, Szenario A ca. 80–90, Szenario B ca. 30, Auswertung ca. 50–60, Ursachennetz und Sicherung ca. 25. Insgesamt etwa vier bis fünf Unterrichtsstunden.</p>
+<p><b>Hypothetische Spielwelt:</b> Lea und Jonas, Nachrichten, Ereignisse und alle Spielwerte sind erfunden bzw. vereinfachte Modellannahmen, keine Messwerte. Es gibt keine richtige Lebensform oder ideale Kinderzahl. Die Materialien M6–M13 bilden ihren jeweiligen Datenstand ab.</p>
+<h3>Datenschutz</h3>
+<p>Diese Seite lädt nichts aus dem Internet nach und sendet keine Eingaben an einen Server. Es gibt keine Anmeldung, keine Cookies und kein Tracking. Eingaben werden automatisch im Browser-Speicher dieses Geräts abgelegt und nach 21 Tagen ohne Nutzung gelöscht. Dateien oder Sicherungscodes entstehen nur, wenn Sie selbst auf „Sichern“ tippen.</p>
+<p>Tragen Sie keine Namen oder Kontaktdaten ein. Alle Aufgaben beziehen sich auf Lea und Jonas und auf die Materialien. Auf geteilten Geräten löschen Sie Ihre Eingaben am Ende.</p>
+<div id="ehAll"></div>
+<div class="actions"><button id="closeHelp">Verstanden</button><button class="quiet" id="wipe">Alle Eingaben auf diesem Gerät löschen</button></div></dialog>
+<dialog id="chap"><div id="chapContent"></div><div class="actions"><button id="closeChap">Schließen</button></div></dialog>
+<dialog id="saveDlg"><h2>Zwischenstand sichern</h2><p id="autoInfo"></p>
+<h3>1 · Als Datei sichern</h3><p>Auf dem iPad öffnet sich das Teilen-Menü: „In Dateien sichern“ oder per AirDrop. Am Computer wird eine Datei heruntergeladen.</p><button id="saveFileBtn">Datei sichern</button>
+<h3>2 · Sicherungscode kopieren</h3><p>Funktioniert immer, auch wenn Downloads gesperrt sind. Fügen Sie den Code z. B. in die Notizen-App oder als mebis-Abgabe ein. Über „Laden“ geht es damit weiter.</p><button id="copyCode">Code kopieren</button><textarea id="codeOut" class="code" readonly aria-label="Sicherungscode"></textarea>
+<p class="missing done" id="saveMsg" aria-live="polite"></p><div class="actions"><button class="quiet" id="closeSave">Schließen</button></div></dialog>
+<dialog id="loadDlg"><h2>Zwischenstand laden</h2><p>Der geladene Stand ersetzt den Stand auf diesem Gerät.</p>
+<h3>Aus einer Datei</h3><button id="pickFile">Datei wählen</button>
+<h3>Mit Sicherungscode</h3><textarea id="codeIn" class="code" placeholder="Code einfügen (beginnt mit L2035)" aria-label="Sicherungscode einfügen" autocomplete="off" spellcheck="false"></textarea><button id="loadCode">Code laden</button>
+<p class="missing" id="loadMsg" aria-live="polite"></p><div class="actions"><button class="quiet" id="closeLoad">Schließen</button></div></dialog>
+<dialog id="askDlg"><p id="askText"></p><div class="actions"><button id="askOk">Ja</button><button class="quiet" id="askCancel">Abbrechen</button></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<footer>Ein Modell zum Nachdenken · Lebensentwürfe sind vielfältig · Keine Datenübertragung</footer>
+<script>"use strict";
+const TEACHER=false;
+const labels=['Finanzieller Spielraum','Freie Zeit','Berufliche Möglichkeiten','Unterstützung im Alltag'];
+const rounds=[
+{age:19,title:'Abitur. Und jetzt?',story:'Lea und Jonas haben ihr Abitur geschafft. Jonas beginnt eine Ausbildung in seiner Heimatstadt. Beide möchten eigene Erfahrungen sammeln und können sich eine Familie vorstellen. Wie soll Lea ihren nächsten Lebensabschnitt gestalten?',factor:'Ausbildung und Arbeitswelt',source:'M12',fact:'Längere Ausbildungswege können die finanzielle Selbstständigkeit und damit die Familiengründung nach hinten verschieben. Sie erweitern zugleich berufliche Möglichkeiten.',options:[['Eine Ausbildung beginnen','Früh eigenes Einkommen, klarer Zeitplan.',[2,-1,1,0]],['Studieren und einen Master anstreben','Länger lernen, spätere finanzielle Selbstständigkeit.',[-2,-1,3,0]],['Ein Jahr ins Ausland gehen','Erfahrungen sammeln, danach neu entscheiden.',[-1,1,1,0]]]},
+{age:24,title:'Die Chance liegt 400 km entfernt.',story:'Lea bekommt ein Jobangebot in Hamburg, 400 km entfernt. Sie möchte es annehmen. Jonas hat am bisherigen Wohnort eine feste Stelle und ist unsicher, ob er mitziehen soll.',factor:'Mobilität und Arbeitswelt',source:'M12',fact:'Berufliche Mobilität kann Partnerschaften und private Unterstützungsnetze belasten. Schäfers sieht darin einen Grund, warum Familienplanung schwieriger wird.',options:[['Gemeinsam umziehen','Jonas sucht vor Ort einen neuen Einstieg.',[1,-1,2,-2]],['Eine Fernbeziehung führen','Beide behalten ihre beruflichen Perspektiven.',[1,-2,2,-1]],['Das Angebot ablehnen','In der Nähe von Freunden und Familie bleiben.',[0,1,-1,2]]]},
+{age:27,title:'Welches Leben passt zu euch?',story:'Lea und Jonas sprechen über ihre Zukunft. Beide haben eigene Wünsche. Eine gemeinsame Wohnung, Heirat und Kinder sind unterschiedliche Entscheidungen.',factor:'Wertewandel und Lebensformen',source:'M10 / M13',fact:'Vielfältige Lebensformen eröffnen mehr individuelle Gestaltungsmöglichkeiten. Unverheiratetes Zusammenleben oder getrennte Wohnungen bedeuten nicht automatisch Kinderlosigkeit.',options:[['Zusammenwohnen, ohne zu heiraten','Ein gemeinsamer Alltag ist uns wichtig.',[1,1,0,1]],['Heiraten und zusammenwohnen','Wir möchten unsere Partnerschaft so gestalten.',[1,1,0,1]],['Vorerst getrennte Wohnungen behalten','Eigenständigkeit ist uns wichtig.',[-1,1,0,0]]]},
+{age:29,title:'Kinderwunsch trifft Lebensalltag.',story:'Beide können sich ein Kind vorstellen. Lea könnte mehr Verantwortung im Beruf übernehmen. Jetzt besprechen sie, ob und wann sie ihre Familienplanung konkretisieren.',factor:'Kinderwunsch und Opportunitätskosten',source:'M8 / M12',fact:'Opportunitätskosten sind entgangene Möglichkeiten, etwa Einkommen oder beruflicher Aufstieg (M12). Das Durchschnittsalter beim ersten Kind ist seit den 1970er-Jahren deutlich gestiegen (M8). Ein Kinderwunsch garantiert keine Geburt.',options:[['Familiengründung jetzt anstreben','Wir versuchen, Arbeit und Betreuung neu zu ordnen.',[-1,-2,0,0],'jetzt'],['Noch zwei Jahre warten','Wir wollen zunächst mehr Planungssicherheit.',[1,0,1,0],'später'],['Unsere Zukunft vorerst ohne Kinder planen','Wir wählen einen anderen Lebensentwurf.',[0,1,0,0],'ohne']]},
+{age:30,title:'Betreuung ist keine Nebensache.',story:'Für eine mögliche Familiengründung brauchen beide einen verlässlichen Alltag. Ein wohnortnaher Kita-Platz ist ungewiss. Was ist ihr Plan?',storyB:'Für eine mögliche Familiengründung brauchen beide einen verlässlichen Alltag. Diesmal ist ein wohnortnaher Kita-Platz mit langen Öffnungszeiten verfügbar. Was ist ihr Plan?',factor:'Kinderbetreuung und Vereinbarkeit',source:'M12 / M8',fact:'Schäfers nennt fehlende Betreuungsplätze als Ursache (M12). Der DDR-Hinweis zu M8 zeigt: Einfachere Vereinbarkeit gilt als ein Grund für das frühere Alter der Mütter beim ersten Kind im Osten.',options:[['Professionelle Betreuung nutzen','Anmelden und mit dem vorhandenen Angebot planen.',[-1,1,1,1]],['Verwandte um regelmäßige Hilfe bitten','Ein tragfähiges privates Netz organisieren.',[0,1,0,1]],['Erwerbsarbeit stärker reduzieren','Betreuung überwiegend selbst organisieren.',[-2,-1,-1,1]]]},
+{age:31,title:'Wer übernimmt welche Arbeit?',story:'Beide diskutieren einen Plan für den Fall einer Geburt: Erwerbsarbeit, Elternzeit, Haushalt und Betreuung müssen zusammenpassen. Die Aufteilung ist verhandelbar.',factor:'Geschlechterrollen und Familienarbeit',source:'M11 / M9',fact:'Mütter beziehen Elterngeld im Schnitt deutlich länger als Väter (M11). Eine ungleiche Verteilung von Familienarbeit kann Erwerbs- und Karrierechancen beeinflussen (M9). Daten zeigen Verhalten, sie erklären dessen Ursachen nicht allein.',options:[['Beide teilen Elternzeit und Betreuung','Auch die beruflichen Einschnitte werden geteilt.',[-1,-1,0,2]],['Lea übernimmt überwiegend die Betreuung','Jonas arbeitet weitgehend weiter.',[0,-2,-1,0]],['Jonas übernimmt überwiegend die Betreuung','Lea arbeitet weitgehend weiter.',[0,-2,-1,0]]]},
+{age:33,title:'Und wie geht es weiter?',story:'Lea und Jonas denken erneut über ihren Kinderwunsch nach – vielleicht auch über ein weiteres Kind. Gleichzeitig streitet der Stadtrat über Familienförderung. Die Spielwerte zeigen Bedingungen, die Entscheidung treffen weiterhin die beiden.',factor:'Wunsch, Bedingungen und Entscheidung',source:'M9 / M7',fact:'Der Anteil der Frauen mit drei oder mehr Kindern ist seit Anfang der 1970er-Jahre von etwa 30 % auf etwa 16 % gesunken (M9). Wünsche, Partnerschaft und Rahmenbedingungen wirken zusammen – ein Durchschnitt sagt keinen Lebenslauf voraus.',options:[['Am Kinderwunsch festhalten','Ein Kind oder ein weiteres Kind anstreben.',[-1,-1,0,0],'festhalten'],['Den Kinderwunsch weiter verschieben','Die Bedingungen erscheinen uns noch schwierig.',[0,0,0,0],'verschieben'],['Unsere Zukunft ohne (weitere) Kinder planen','Unsere Wünsche haben sich verändert.',[0,0,0,0],'abschließen']]}
+];
+const events=[{after:1,title:'Ein Vertrag mit Ablaufdatum.',text:'Eine Stelle wird nur befristet angeboten. Langfristige Planung wird schwieriger.',delta:[-1,0,0,-1],better:'Auch hier bleibt die Stelle befristet. Flexible Arbeitszeit erleichtert jedoch die Alltagsplanung.',bdelta:[-1,1,0,0]},{after:3,title:'Die Wohnung wird teurer.',text:'Die Miete steigt. Der finanzielle Spielraum schrumpft.',delta:[-2,0,0,0],better:'Ein Angebot für bezahlbaren Wohnraum federt den Mietanstieg ab.',bdelta:[0,0,0,0]},{after:5,title:'Ein privates Netz fällt aus.',text:'Ein Angehöriger kann nicht mehr regelmäßig helfen. Betreuung muss neu organisiert werden.',delta:[0,-1,0,-2],better:'Der Angehörige fällt aus. Verlässliche Betreuung erleichtert die Neuorganisation.',bdelta:[0,0,0,-1]}];
+const B_SKIP=[0,2];
+const bBonus={1:[0,1,1,0],3:[0,1,0,1],4:[0,1,1,1],5:[0,0,1,1]};
+const bChange={1:'Die Stelle in Hamburg verlangt nur zwei statt vier Präsenztage pro Woche, die Arbeitszeiten sind flexibel.',3:'Für die Projektleitung wird eine Stellvertretung eingerichtet, ein Teil der Termine findet digital statt.',4:'Ein Kita-Platz von 7:30 bis 17 Uhr ist sofort verfügbar statt einer Warteliste mit Betreuung bis 15 Uhr.',5:'Die Projektleitung kann geteilt werden, beide können flexible Arbeitszeiten vereinbaren.',6:'Lea und Jonas haben flexible Arbeit, verlässliche Betreuung und bezahlbaren Wohnraum erlebt.'};
+const bPrompts={1:'Vergleichen Sie Szenario A und B: Schäfers schreibt, die Wirtschaft bevorzuge räumlich mobile und zeitlich jederzeit verfügbare Menschen (M12). Trifft das in Szenario B weniger zu? Welcher Konflikt bleibt?',3:'Erklären Sie, welche Opportunitätskosten (M12) durch Stellvertretung und digitale Termine sinken und welche bestehen bleiben.',4:'Vergleichen Sie Szenario A und B mithilfe von M12 und dem DDR-Hinweis zu M8: Reicht ein verlässlicher Kita-Platz aus? Welche Faktoren bleiben relevant?',5:'Analysieren Sie: Würde eine teilbare Projektleitung die Unterschiede aus M11 (Väteranteil, Bezugsdauer) verringern? Welche Rollenerwartungen aus M9 bleiben bestehen?',6:'Beurteilen Sie: Hat sich Ihr Urteil zu den Vorschlägen des Stadtrats und zu Ihren Anreizen aus dem Einstieg durch den Vergleich verändert? Begründen Sie.'};
+const phaseTasks=[
+{material:'M12 (S. 23) · Ursachen nach Schäfers: Ausbildung und Arbeitswelt',book:'bereitet Aufgabe 8 vor',level:'AFB I / II',task:'Arbeiten Sie aus M12 die Ursachen heraus, die Bernhard Schäfers im Bereich Ausbildung und Arbeitswelt nennt (Werte des Arbeitslebens, unterschiedliche Ausbildungs- und Berufskarrieren). Erklären Sie, wie Leas Entscheidung den Zeitpunkt einer Familiengründung beeinflussen kann.',type:'Arbeitgeber-E-Mail · fiktiv',rule:{min:130,mat:1}},
+{material:'M12 (S. 23) · Anforderungen der Wirtschaft',book:'bereitet Aufgabe 8 vor',level:'AFB II',task:'Erklären Sie mithilfe von M12, warum Schäfers die Anforderungen der Wirtschaft an räumliche und zeitliche Verfügbarkeit als Ursache für den Geburtenrückgang nennt. Wenden Sie diese Aussage auf Leas Jobangebot an.',type:'Arbeitgeber-E-Mail · fiktiv',rule:{min:130,mat:1}},
+{material:'M10 (S. 22) · Private Lebensformen / M12 (S. 23)',book:'Aufgabe 5 (Stichpunkte) und 6',level:'AFB I / II',task:'Beschreiben Sie anhand von M10, wie Menschen in Deutschland leben. Nennen Sie mindestens zwei Zahlen mit ihrer Bezugsgruppe und beachten Sie die Lesehilfe: Als „Kinder“ gelten ledige Personen im Haushalt. M10 selbst nennt keine Ursachen: Notieren Sie deshalb mithilfe von M12 und M13 Stichpunkte zu möglichen Ursachen für die Vielfalt der Lebensformen – daraus entsteht später Ihr Erklärtext (Aufgabe 5).',type:'Newsticker · fiktives Szenario',rule:{min:150,mat:1,num:2}},
+{material:'M8 (S. 21) · Alter beim ersten Kind / M12 (S. 23) · Opportunitätskosten',book:'Aufgabe 2',level:'AFB II',task:'Analysieren Sie M8: Beschreiben Sie den Verlauf für Deutschland seit etwa 1970 und belegen Sie ihn mit zwei abgelesenen Werten. Vergleichen Sie kurz West- und Ostdeutschland. Stellen Sie einen Zusammenhang zur Karikatur M6 her und erklären Sie mit dem Begriff „Opportunitätskosten“ (M12), warum Paare wie Lea und Jonas die Familiengründung aufschieben können.',type:'Arbeitgeber-E-Mail · fiktiv',rule:{min:180,mats:2,num:2}},
+{material:'M12 (S. 23) · Kinderbetreuung / M8 (S. 21) · Hinweis DDR',book:'bereitet Aufgabe 8 und 11 vor',level:'AFB II / III',task:'Erklären Sie mithilfe von M12 und dem DDR-Hinweis neben M8, welche Rolle Kinderbetreuung für die Familienplanung spielen kann. Beurteilen Sie, inwiefern ein ungewisser Kita-Platz mit Betreuung bis 15 Uhr die Planung von Lea und Jonas erschwert.',type:'Newsticker · fiktives Szenario',rule:{min:150,mats:2}},
+{material:'M11 (S. 23) · Elterngeld / M9 (S. 22) · Arbeitsteilung in Mehrkindfamilien',book:'Aufgabe 7a und 7b',level:'AFB II',task:'Interpretieren Sie M11 mithilfe der Erklärung zu Elterngeld und Elternzeit in der Randspalte: Nennen Sie den Väteranteil 2015 und 2021 sowie die durchschnittliche Dauer der Elternzeit von Müttern und Vätern. Beachten Sie die Lesehilfe. Erarbeiten Sie zu zweit zwei mögliche Gründe für die unterschiedliche Inanspruchnahme – M9 hilft dabei.',type:'Arbeitgeber-E-Mail · fiktiv',rule:{min:180,mats:2,num:2}},
+{material:'M9 (S. 22) · Mehrkindfamilien, mit Hinweis in der Randspalte',book:'Aufgabe 4, bereitet 10 und 11 vor',level:'AFB II / III',task:'Erläutern Sie die in M9 genannten Gründe für den Rückgang von Mehrkindfamilien. Beziehen Sie den Hinweis in der Randspalte ein (Frauen mit drei oder mehr Kindern: Anfang der 1970er-Jahre und heute). Beurteilen Sie dann die beiden Vorschläge des Stadtrats: Welcher greift die Gründe aus M9 eher auf?',type:'Newsticker · fiktives Szenario',rule:{min:200,mat:1,num:2}}
+];
+const phaseContext=[
+{sender:'Ausbildungsbetrieb Nordlicht → Lea',subject:'Betreff: Ausbildungsangebot – Rückmeldung bis Freitag',message:'Wir bieten Ihnen ab September eine dreijährige Ausbildung mit 1.150 € brutto im ersten Jahr an. Arbeitszeit: 38 Stunden pro Woche, gelegentlich samstags. Eine Übernahme können wir noch nicht zusagen. Bitte antworten Sie bis Freitag.',chat:['Ich habe auch eine Studienzulassung. Die Ausbildung bringt Geld, aber ich will mich nicht nur deshalb gegen das Studium entscheiden.','Ich habe mit meiner Ausbildung schon begonnen und stehe bald auf eigenen Beinen. Müssen wir eigentlich denselben Zeitplan haben?'],question:'Welche Bedeutung haben eigenes Einkommen und persönliche Bildungsziele für die gemeinsame Planung?',side:['M12 · Textanalyse','Ausbildung und Arbeitswelt','Der Soziologe Bernhard Schäfers nennt unter anderem die Werte des Arbeitslebens wie lebenslanges Lernen, Flexibilität und Mobilität sowie unterschiedliche Ausbildungs- und Berufskarrieren von Mann und Frau.','Schäfers spricht von Erklärungsversuchen. Unterscheiden Sie sie von statistisch belegten Zusammenhängen.']},
+{sender:'Personalabteilung Hafenwerk → Lea',subject:'Betreff: Jobangebot Hamburg – 3.600 € brutto',message:'Wir bieten Ihnen eine Stelle mit 3.600 € brutto monatlich und einem zunächst auf 24 Monate befristeten Vertrag. Beginn in sechs Wochen. Die Tätigkeit erfordert vier Präsenztage pro Woche in Hamburg. Bitte entscheiden Sie bis Montag.',messageB:'Wir bieten Ihnen eine Stelle mit 3.600 € brutto monatlich und einem zunächst auf 24 Monate befristeten Vertrag. Beginn in sechs Wochen. Die Tätigkeit erfordert zwei Präsenztage pro Woche in Hamburg, die übrige Zeit arbeiten Sie mobil mit flexiblen Arbeitszeiten. Bitte entscheiden Sie bis Montag.',chat:['Ich will diesen Job! Das ist mein Einstieg in den Bereich, der mich interessiert. Ich würde nach Hamburg ziehen.','Ich bin unsicher. Mein Vertrag hier ist unbefristet. Wenn ich mitziehe, gebe ich diese Sicherheit auf. Und eine Fernbeziehung wollte ich eigentlich nicht.'],chatB:['Mit zwei Präsenztagen müsste ich vielleicht gar nicht ganz umziehen. Ich könnte pendeln oder zwei Nächte pro Woche dort bleiben.','Das klingt besser. Aber der Vertrag ist trotzdem befristet – und dauerhaft pendeln ist auch anstrengend.'],question:'Wessen berufliche Perspektive soll stärker gewichtet werden? Gibt es eine Lösung, die beide berücksichtigt?',side:['M12 · Arbeitswelt','Mobil und jederzeit verfügbar','Laut Schäfers bevorzugt die Wirtschaft Menschen, die räumlich mobil und zeitlich jederzeit verfügbar sind – typischerweise Singles. Das Jobangebot im Spiel ist erfunden.','Prüfen Sie, welchen Konflikt der Text erklärt – und welche Entscheidung er offenlässt.']},
+{sender:'Fiktiver Lokal-Newsticker',subject:'Wohnprojekt: gemeinsamer Mietvertrag oder zwei Wohnungen?',message:'Ein neues Wohnprojekt bietet Zweizimmerwohnungen für 1.050 € kalt an. Zwei kleinere Einzelwohnungen kosten zusammen 1.500 € kalt. Der Stadtrat diskutiert, ob Förderangebote nur Familien oder auch andere Haushalte erreichen sollen.',chat:['Zusammenwohnen würde Geld sparen. Heiraten möchte ich deshalb aber nicht automatisch.','Ich möchte einen gemeinsamen Alltag. Eine Ehe gibt mir persönlich Sicherheit – aber ich will dich nicht drängen.'],question:'Welche Entscheidungen betreffen den persönlichen Lebensentwurf, welche wirtschaftliche Bedingungen?',side:['M10 · Statistik lesen','Wie leben Menschen in Deutschland?','Mit ledigen Kindern leben unter anderem 15,8 Mio. Eheleute (mit 13,8 Mio. Kindern) und 2,2 Mio. alleinerziehende Mütter (mit 3,1 Mio. Kindern). Ohne Kinder im Haushalt leben unter anderem 19,4 Mio. Eheleute und 18,4 Mio. Alleinstehende.','„Ohne Kinder“ heißt: ohne ledige Kinder im Haushalt – auch Eltern erwachsener Kinder zählen dazu.']},
+{sender:'Teamleitung Hafenwerk → Lea',subject:'Betreff: Projektleitung – Gehalt und Reisezeiten',message:'Wir bieten Ihnen für 18 Monate die Projektleitung an: 500 € brutto mehr pro Monat, dazu zwei Dienstreisen mit jeweils drei Übernachtungen pro Monat. Eine Stellvertretung ist bisher nicht eingeplant.',messageB:'Wir bieten Ihnen für 18 Monate die Projektleitung an: 500 € brutto mehr pro Monat, dazu zwei Dienstreisen mit jeweils drei Übernachtungen pro Monat. Wir richten eine Stellvertretung ein; ein Teil der Termine kann digital stattfinden.',chat:['Ich will die Projektleitung. Aber ich will unseren Kinderwunsch nicht immer wieder verschieben.','Ich möchte auch ein Kind. Ich könnte Stunden reduzieren, aber dann verlieren wir Einkommen. Können wir zuerst die Reisezeiten verhandeln?'],chatB:['Mit einer Stellvertretung wäre ich nicht allein verantwortlich, wenn zu Hause etwas ist.','Die Reisen bleiben aber. Ändert das wirklich etwas an unserer Frage, wann wir ein Kind wollen?'],question:'Erklären Sie die Opportunitätskosten beider Alternativen. Welche Bedingungen ließen sich verändern?',side:['M8 · Verlaufsgrafik','Das erste Kind kommt später','In Deutschland stieg das Durchschnittsalter der Mütter beim ersten Kind von etwa 24 Jahren (um 1970) auf gut 30 Jahre (2019). In der DDR lag es bis 1990 deutlich niedriger und glich sich danach schnell an.','Lesen Sie Achsen, Zeitraum und Legende. Nutzen Sie bei abgelesenen Werten „etwa“.']},
+{sender:'Fiktiver Betreuungs-Newsticker',subject:'Kita-Zusage: Öffnungszeiten passen nicht automatisch zum Arbeitstag',message:'Lea und Jonas stehen auf einer Warteliste; möglich wäre eine Betreuung von 8 bis 15 Uhr. Die Großeltern bieten einen Nachmittag pro Woche an, möchten sich aber nicht täglich verpflichten.',messageB:'Ein Platz in einer wohnortnahen Kita von 7:30 bis 17 Uhr ist verfügbar. Die Großeltern bieten einen Nachmittag pro Woche an, möchten sich aber nicht täglich verpflichten.',chat:['Mein Arbeitstag endet oft erst um 17 Uhr. Ein Platz bis 15 Uhr löst unser Problem noch nicht.','Wir könnten Zeiten aufteilen. Aber auf die Großeltern können wir nicht jeden Tag zählen. Wer übernimmt, wenn jemand krank ist?'],chatB:['Bis 17 Uhr passt zu meinem Arbeitstag. Das nimmt viel Druck raus.','Und wenn das Kind krank ist oder die Kita schließt? Dann stehen wir trotzdem vor derselben Frage.'],question:'Beurteilen Sie, ob die bloße Zahl der Betreuungsplätze ausreicht oder auch Verlässlichkeit und Öffnungszeiten entscheidend sind.',side:['M8 · Hinweis DDR / M12','Betreuung als Rahmenbedingung','Aufgrund politischer Vorgaben und weil Arbeitskräfte fehlten, baute die DDR früh Kinderbetreuung und staatliche Unterstützung aus. Die einfachere Vereinbarkeit gilt als ein Grund für das frühere Alter der Erstgebärenden im Osten. Schäfers nennt fehlende Betreuungsplätze als Ursache (M12).','„Ein Aspekt“ heißt: kein alleiniger Grund.']},
+{sender:'Personalabteilung → Jonas',subject:'Betreff: Ihre geplante Familienzeit und das neue Projekt',message:'Sie haben sechs Monate Familienzeit angesprochen. Das neue Kundenprojekt beginnt im selben Zeitraum. Ihre Teamleitung würde Ihnen die Leitung anbieten, wenn Sie direkt starten. Bitte besprechen Sie mit uns, wie Vertretung und Rückkehr organisiert werden können.',messageB:'Sie haben sechs Monate Familienzeit angesprochen. Das neue Kundenprojekt beginnt im selben Zeitraum. Die Projektleitung kann geteilt werden, sodass Sie nach Ihrer Rückkehr einsteigen. Beide Elternteile können flexible Arbeitszeiten vereinbaren.',chat:['Ich möchte die Betreuung nicht selbstverständlich allein übernehmen. Meine beruflichen Pläne zählen auch.','Ich will sechs Monate übernehmen. Aber wenn ich das Projekt ablehne, befürchte ich, beim nächsten Mal übergangen zu werden.'],chatB:['Wenn du die Leitung teilen kannst, spricht doch nichts mehr gegen deine sechs Monate, oder?','Formal nicht. Aber ob die Kollegen es genauso sehen, weiß ich nicht.'],question:'Analysieren Sie den Einfluss betrieblicher Erwartungen und Rollenbilder. Welche Lasten werden auf wen verteilt?',side:['M11 · Datenstand 2021','Väteranteil und Bezugsdauer','Der Väteranteil am Elterngeld stieg von 20,9 % (2015) über 24,8 % (2020) auf 25,3 % (2021). 2021 dauerte die Elternzeit im Schnitt bei Müttern 14,6 Monate, bei Vätern 3,7 Monate.','50 % hieße: Bei allen Kindern beziehen Vater und Mutter Elterngeld. Der Anteil ist nicht der Anteil aller Väter mit Elternzeit.']},
+{sender:'Fiktiver Politik-Newsticker',subject:'Stadtrat streitet über Familienförderung',message:'Vorschlag A: einmalig 3.000 € für Haushalte nach der Geburt eines Kindes. Vorschlag B: dieselben Mittel in zusätzliche Betreuung und verlässliche Öffnungszeiten investieren. Für beides zusammen reicht der Haushalt nicht aus.',chat:['Die 3.000 € würden uns helfen. Aber davon ist unser Betreuungsproblem nicht dauerhaft gelöst.','Ich würde die Betreuung bevorzugen. Trotzdem entscheiden wir selbst, ob wir Kinder möchten – das darf kein politisches Leistungsziel für uns sein.'],question:'Beurteilen Sie beide Vorschläge anhand von Entlastung, Vereinbarkeit und Selbstbestimmung.',side:['M9 / M7 · Daten','Weniger große Familien','Anfang der 1970er-Jahre hatten etwa 30 % der Frauen drei oder mehr Kinder, heute etwa 16 % (M9). Die Geburtenrate lag 2022 bei 1,58 – unter dem Richtwert von 2,1 für den Erhalt der Bevölkerung (M7).','Trennen Sie Materialbefund, Schlussfolgerung und persönliches Werturteil.']}
+];
+const m13Tasks={2:{title:'M13 (S. 24–25) · Wertewandel und Familie',book:'Aufgabe 9',task:'Arbeiten Sie anhand des Textes M13 (1) heraus, wie die Gesellschaft zur Familie eingestellt ist. Setzen Sie Ihre Ergebnisse in Bezug zu den Lebenseinstellungen der Generationen X, Y und Z in der Umfrage M13 (2).',hint:'M13 (1) beruht auf Daten von 2018 (Datenreport 2021), M13 (2) auf einer Umfrage von 2022 mit Mehrfachnennungen. Nennen Sie mindestens zwei Prozentwerte.',chat:'Lea: „Mein Beruf ist mir wichtig. Das heißt doch nicht, dass mir Familie unwichtig ist.“ Jonas: „Stimmt. Vielleicht geht es weniger um entweder oder als um Bedingungen, die beides ermöglichen.“',rule:{min:170,mat:1,num:2}}};
+const introTasks=[
+{key:'e-m6',label:'Einstiegsaufgabe 1 · Analysieren Sie die Karikatur M6 (S. 20).',hint:'Beschreiben Sie Personen, Situation und Sprechblasen. Deuten Sie die Aussage und nennen Sie Zeichner und Jahr (Bildunterschrift).',ph:'Die Karikatur von … aus dem Jahr … zeigt … Der Zeichner kritisiert …',rule:{min:180,mat:1},name:'Karikaturanalyse'},
+{key:'e-titel',label:'Einstiegsaufgabe 2 · Formulieren Sie einen treffenden Titel für die Karikatur.',hint:'Stellen Sie Ihre Vorschläge anschließend in der Klasse vor.',ph:'„…“',rule:{min:8,free:1},name:'Titel'},
+{key:'e-anreize',label:'Einstiegsaufgabe 3 · Sammeln Sie zu zweit drei staatliche „Anreize“, die die Geburtenzahl in Deutschland steigern könnten.',hint:'Eine Zeile pro Anreiz. Am Ende überprüfen Sie Ihre Liste (Aufgabe 10).',ph:'1. …\n2. …\n3. …',rule:{min:45,lines:3,free:1},name:'Anreize-Liste'},
+{key:'e-m7',label:'Aufgabe 1 (S. 25) · Interpretieren Sie die Grafik M7 (S. 21) zu Geburten und Sterbefällen und stellen Sie die Folgen dieser Entwicklung dar.',hint:'Beschreiben Sie Geburten, Sterbefälle und den natürlichen Saldo mit Werten. Nutzen Sie die Randspalte zur Geburtenrate und zum Richtwert von 2,1.',ph:'Seit etwa … sterben … Der natürliche Saldo … Folgen: …',rule:{min:200,mat:1,num:2},name:'M7-Interpretation'}];
+const RULES={reason:{min:60},drawback:{min:40},cmp:{min:120}};
+const finalTasks=[
+{id:'a1',tag:'AFB II · vgl. Aufgabe 3',label:'1 · Setzen Sie die Grafiken M7 und M8 (S. 21) in Beziehung zueinander.',hint:'Wie hängen sinkende Geburtenzahlen und das steigende Alter beim ersten Kind zusammen? Belegen Sie mit Werten und nennen Sie eine Grenze dieses Zusammenhangs.',ph:'Während M7 zeigt, dass … , zeigt M8 … Ein Zusammenhang könnte sein …',rule:{min:180,mats:2,num:2}},
+{id:'a2',tag:'AFB II · vgl. Aufgabe 8',label:'2 · Ordnen Sie den Ursachen, die Bernhard Schäfers in M12 nennt, passende Belege aus den Materialien M7–M11 zu.',hint:'Schäfers nennt sieben Ursachen. Schreiben Sie eine Zeile pro Ursache: Ursache → Material → konkreter Beleg (mindestens fünf Zeilen). Findet sich für eine Ursache kein Beleg in M7–M11, notieren Sie das – dazu passt die Förderaufgabe F zu Aufgabe 8. Die Zuordnung ist die Grundlage für Ihr Ursachennetz.',ph:'Opportunitätskosten → M9: kinderreiche Frauen haben deutlich weniger Erwerbseinkommen …',rule:{min:300,mats:4,lines:5}},
+{id:'a3',tag:'AFB III · vgl. Aufgabe 6',label:'3 · Diskutieren Sie mögliche Zusammenhänge zwischen der Vielfalt an Lebensformen (M10) und einer niedrigen Geburtenrate (M12).',hint:'Wägen Sie Argumente ab und beziehen Sie M13 ein: Bedeutet Vielfalt automatisch weniger Kinder?',ph:'Für einen Zusammenhang spricht … Dagegen spricht … Insgesamt …',rule:{min:250,mats:2}},
+{id:'a4',tag:'AFB III · vgl. Aufgabe 7c',label:'4 · Elterngeld und Elternzeit gibt es seit 2007. Ein Ziel war laut Randspalte zu M11, die Zahl der Geburten zu steigern – die Geburtenziffer hat sich aber nur wenig verändert (Randspalte M7). Reflektieren Sie mögliche Ursachen, auch mithilfe Ihrer Spielszenarien A und B.',hint:'Nutzen Sie die Geburtenraten aus der Randspalte zu M7, M11 und den Verlauf der Spielwerte. Die Spielwerte sind keine empirischen Belege.',ph:'Die Geburtenrate lag 2010 bei … und 2022 bei … Mögliche Ursachen … In Szenario A … in Szenario B …',rule:{min:250,mats:2,num:2,ab:1}},
+{id:'a5',tag:'AFB III · vgl. Aufgabe 10',label:'5 · Überprüfen Sie Ihre gesammelten staatlichen Anreize aus dem Einstieg mithilfe Ihrer Erkenntnisse.',hint:'Prüfen Sie für jeden Anreiz: Welche Ursache aus M12 greift er auf – und welche nicht? Welcher Anreiz überzeugt Sie jetzt am meisten?',ph:'Anreiz 1 … greift die Ursache … auf, weil … Anreiz 2 …',rule:{min:220,mats:2}},
+{id:'a6',tag:'AFB III · vgl. Aufgabe 11',label:'6 · Diskutieren Sie, ob es eine zentrale Aufgabe des Staates ist, Anreize für das „Kinderkriegen“ zu setzen.',hint:'Wägen Sie Pro und Contra ab (z. B. demografische Folgen aus M7, Selbstbestimmung, Wirksamkeit), formulieren Sie ein begründetes Urteil und benennen Sie eine Grenze des Spielmodells. So sind Sie für die Diskussion in der Klasse vorbereitet.',ph:'Dafür spricht … Dagegen spricht … Nach Abwägung … Das Spiel vereinfacht …',rule:{min:280,mats:2}},
+{id:'a7',label:'7 · Formulieren Sie Ihren Merksatz zum Zusammenhang von Wertewandel, Lebensentwürfen und Bevölkerungsentwicklung.',hint:'',ph:'Die Geburtenentwicklung wird beeinflusst durch … Ein Kinderwunsch …',rule:{min:100}}
+];
+
+/* Quellenangaben laut Schulbuch (S. 20–25) */
+const SOURCES={
+M6:{page:'S. 20',type:'Karikatur',origin:'Gerhard Mester',year:'2005',limit:'Zugespitzte Meinung des Zeichners – keine Daten. Fragen Sie: Wen oder was kritisiert er?'},
+M7:{page:'S. 21',type:'Statistik · Linien- und Säulendiagramm',origin:'C.C. Buchner Verlag, Daten nach DESTATIS',year:'Daten 1950–2021, erhoben 2022',limit:'Zeigt nur Geburten und Sterbefälle – Zu- und Abwanderung sind nicht enthalten.'},
+M8:{page:'S. 21',type:'Statistik · Liniendiagramm',origin:'Bundesinstitut für Bevölkerungsforschung; Daten: Europarat (bis 1989), Statistisches Bundesamt',year:'1960–2019, Stand 2023',limit:'Durchschnittswerte. Gebietsstände ändern sich 2000/2001 (Fußnoten beachten).'},
+M9:{page:'S. 22',type:'Sachtext',origin:'Bundesinstitut für Bevölkerungsforschung: Kinderreiche Familien in Deutschland, Wiesbaden 2019',year:'2019',limit:'Beschreibt typische Befunde, keine Einzelfälle. Die Randspalte nennt „derzeit“ etwa 16 %.'},
+M10:{page:'S. 22',type:'Statistik · Schaubild (Mikrozensus)',origin:'C.C. Buchner Verlag, Daten nach DESTATIS',year:'erhoben 2021',limit:'„Kinder“ = ledige Personen im Haushalt; „ohne Kinder“ heißt nicht lebenslang kinderlos.'},
+M11:{page:'S. 23',type:'Statistik · Kreis- und Balkendiagramm',origin:'C.C. Buchner Verlag, Daten nach DESTATIS',year:'erhoben 2021',limit:'Väteranteil = Anteil an allen Elterngeldbeziehenden, nicht an allen Vätern.'},
+M12:{page:'S. 23',type:'Sachtext · Erklärungsansätze',origin:'bearbeitet nach Bernhard Schäfers: Sozialstruktur und sozialer Wandel in Deutschland, 9. Aufl.',year:'2012',limit:'Erklärungsversuche eines Soziologen, keine Messung. Stand 2012 – seit 2013 gibt es einen Rechtsanspruch auf einen Betreuungsplatz ab dem ersten Geburtstag.'},
+M13:{page:'S. 24–25',type:'(1) Sachtext mit Umfragedaten · (2) Umfrage',origin:'(1) Kerstin Ruckdeschel, in: Datenreport 2021 · (2) nach Statista, 23.015 Befragte',year:'(1) Daten 2018 · (2) 2022',limit:'Einstellungen sind kein Verhalten. In (2) waren Mehrfachnennungen möglich.'}};
+
+
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],app=$('#app');
+const STORE=TEACHER?'leben2035-v4-lehrkraft':'leben2035-v4',OLD=TEACHER?'leben2035-v3-lehrkraft-unbenutzt':'leben2035-v3',TTL=21*864e5;let savedAt=null,storageOK=true;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let state,notes={};const meta={};
+const k=(s,i)=>`${s}-${i}`;
+
+/* ---------- Speichern auf dem Gerät ---------- */
+function persist(){try{savedAt=Date.now();localStorage.setItem(STORE,JSON.stringify({savedAt,state,notes}));storageOK=true}catch(e){storageOK=false}showSaved()}
+const clock=t=>new Date(t).toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});
+function ago(t){const m=Math.round((Date.now()-t)/6e4);if(m<1)return'gerade eben';if(m<60)return`vor ${m} Min.`;const h=Math.round(m/60);if(h<24)return`vor ${h} Std.`;const d=Math.round(h/24);return`vor ${d} ${d===1?'Tag':'Tagen'}`}
+function showSaved(){const el=$('#saved');if(!el)return;if(!storageOK){el.textContent='⚠ Nicht automatisch gespeichert – bitte „Sichern“';el.className='saved warn';return}el.innerHTML=savedAt?`✓ Gespeichert<span class="stime"> ${clock(savedAt)}</span>`:'';el.title=savedAt?`Automatisch auf diesem Gerät gespeichert um ${clock(savedAt)}`:'';el.className='saved'+(savedAt?' on':'')}
+function fresh(){return{scenario:0,index:0,values:[5,5,5,5],logs:[[],[]],results:[],firstWish:null,view:'start',intro:false}}
+const VIEWS=['start','intro','round','decided','between','results'];
+const int=(v,a,b)=>Number.isInteger(v)&&v>=a&&v<=b;
+function sanitize(obj){
+  if(!obj||typeof obj!=='object')throw 0;const s=obj.state,n=obj.notes;
+  if(!s||!int(s.scenario,0,1)||!int(s.index,0,6)||!VIEWS.includes(s.view))throw 0;
+  if(!Array.isArray(s.values)||s.values.length!==4||!s.values.every(v=>int(v,0,10)))throw 0;
+  if(!Array.isArray(s.logs)||s.logs.length!==2)throw 0;
+  const logs=s.logs.map(l=>{if(!Array.isArray(l)||l.length>7)throw 0;return l.map((x,j)=>{if(!x||x.round!==j||!int(x.choice,0,2))throw 0;return{round:j,choice:x.choice,carried:!!x.carried,jumped:!!x.jumped}})});
+  const wishes=[null,'jetzt','später','ohne'];
+  const results=(Array.isArray(s.results)?s.results:[]).slice(0,2).map(r=>{if(!r||!Array.isArray(r.values)||!r.values.every(v=>int(v,0,10))||!int(r.final,0,2)||!wishes.includes(r.wish))throw 0;return{values:r.values.slice(0,4),wish:r.wish,final:r.final}});
+  const clean={};if(n&&typeof n==='object')for(const[key,val]of Object.entries(n)){if(/^[a-z0-9-]{1,20}$/.test(key)&&typeof val==='string')clean[key]=val.slice(0,20000)}
+  return{state:{scenario:s.scenario,index:s.index,values:s.values.slice(),logs,results,firstWish:wishes.includes(s.firstWish)?s.firstWish:null,view:s.view,intro:!!s.intro},notes:clean}}
+function restore(){
+  for(const key of[STORE,OLD]){try{const raw=localStorage.getItem(key);if(!raw)continue;const o=JSON.parse(raw);if(!o.savedAt||Date.now()-o.savedAt>TTL){localStorage.removeItem(key);continue}
+    const d=sanitize(o);state=d.state;notes=d.notes;savedAt=o.savedAt;if(key===OLD){localStorage.removeItem(OLD);persist()}return true}catch(e){}}
+  return false}
+function load(o){shownVals=null;if(!o||o.app!=='leben2035')throw 0;const d=sanitize(o);state=d.state;notes=d.notes;persist();render()}
+
+/* ---------- Sichern & Laden: Datei, Teilen oder Code (funktioniert auch ohne Downloads) ---------- */
+const b64e=u8=>{let s='';for(let i=0;i<u8.length;i+=32768)s+=String.fromCharCode.apply(null,u8.subarray(i,i+32768));return btoa(s)};
+const b64d=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const snapshot=()=>JSON.stringify({app:'leben2035',v:4,savedAt,state,notes});
+async function makeCode(){const raw=new TextEncoder().encode(snapshot());
+  if(window.CompressionStream){try{const st=new Blob([raw]).stream().pipeThrough(new CompressionStream('deflate'));return'L2035Z:'+b64e(new Uint8Array(await new Response(st).arrayBuffer()))}catch(e){}}
+  return'L2035:'+b64e(raw)}
+async function readCode(str){str=String(str).replace(/\s+/g,'');const m=str.match(/^L2035(Z?):([A-Za-z0-9+/=]+)$/);if(!m)throw new Error('format');let bytes=b64d(m[2]);
+  if(m[1]){if(!window.DecompressionStream)throw new Error('alt');const st=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('deflate'));bytes=new Uint8Array(await new Response(st).arrayBuffer())}
+  return JSON.parse(new TextDecoder().decode(bytes))}
+function download(name,type,text){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.rel='noopener';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),4000)}
+const touch=()=>navigator.maxTouchPoints>1;
+async function deliverFile(name,type,text,say){
+  try{const file=new File([text],name,{type});if(touch()&&navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({files:[file],title:name});say('Fertig: Wählen Sie im Teilen-Menü z. B. „In Dateien sichern“.');return}}
+  catch(e){if(e&&e.name==='AbortError'){say('Teilen abgebrochen.');return}}
+  try{download(name,type,text);say('Download gestartet. Wenn keine Datei erscheint, nutzen Sie bitte „Text kopieren“.')}catch(e){say('Datei konnte nicht erstellt werden – bitte „Text kopieren“ nutzen.')}}
+async function copyText(text,ta){ta.value=text;try{await navigator.clipboard.writeText(text);return true}catch(e){try{ta.focus();ta.select();ta.setSelectionRange(0,text.length);return document.execCommand('copy')}catch(e2){return false}}}
+const stamp=()=>new Date().toISOString().slice(0,10);
+let readyCode='';async function openSave(){const d=$('#saveDlg');$('#saveMsg').textContent='';$('#codeOut').value='Code wird erstellt …';readyCode='';makeCode().then(c=>{readyCode=c;$('#codeOut').value=c});
+  $('#autoInfo').innerHTML=storageOK&&savedAt?`Ihr Stand wird automatisch auf diesem Gerät gespeichert (zuletzt ${clock(savedAt)}). Sichern Sie zusätzlich, wenn Sie das Gerät wechseln oder Safari Daten löschen könnte.`:'<b>Automatisches Speichern ist hier nicht möglich</b> (z. B. weil mebis die Seite eingebettet anzeigt). Sichern Sie Ihren Stand deshalb am Stundenende mit einer der beiden Möglichkeiten.';
+  d.showModal()}
+$('#saveFileBtn').onclick=()=>deliverFile(`Leben2035_Zwischenstand_${stamp()}.json`,'application/json',snapshot(),t=>$('#saveMsg').textContent=t);
+$('#copyCode').onclick=async()=>{const code=readyCode||await makeCode();const ok=await copyText(code,$('#codeOut'));$('#saveMsg').textContent=ok?'Code kopiert. Fügen Sie ihn z. B. in die Notizen-App oder als mebis-Abgabe ein.':'Bitte den Code im Feld markieren und kopieren.'};
+$('#closeSave').onclick=()=>$('#saveDlg').close();
+function openLoad(){$('#loadMsg').textContent='';$('#codeIn').value='';$('#loadDlg').showModal()}
+$('#pickFile').onclick=()=>$('#loadFile').click();
+$('#loadFile').onchange=e=>{const f=e.target.files[0];e.target.value='';if(!f)return;if(f.size>3e6){$('#loadMsg').textContent='Die Datei ist zu groß.';return}
+  const rd=new FileReader();rd.onload=async()=>{try{const txt=String(rd.result).trim();const o=txt.startsWith('L2035')?await readCode(txt):JSON.parse(txt);load(o);$('#loadDlg').close();toast('Zwischenstand geladen.')}catch(err){$('#loadMsg').textContent='Diese Datei ist kein gültiger Zwischenstand von „Leben 2035“.'}};rd.readAsText(f)};
+$('#loadCode').onclick=async()=>{try{load(await readCode($('#codeIn').value));$('#loadDlg').close();toast('Zwischenstand geladen.')}catch(err){$('#loadMsg').textContent=err&&err.message==='alt'?'Dieser Browser kann den Code nicht entpacken. Bitte Safari/Chrome aktualisieren oder die Datei nutzen.':'Der Code ist ungültig oder unvollständig. Kopieren Sie ihn bitte vollständig (er beginnt mit „L2035“).'}};
+$('#closeLoad').onclick=()=>$('#loadDlg').close();
+function ask(text,ok='Ja',cancel='Abbrechen'){return new Promise(res=>{const d=$('#askDlg');$('#askText').textContent=text;$('#askOk').textContent=ok;$('#askCancel').textContent=cancel;const done=v=>{d.close();res(v)};$('#askOk').onclick=()=>done(true);$('#askCancel').onclick=()=>done(false);d.oncancel=e=>{e.preventDefault();done(false)};d.showModal()})}
+let toastT;function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>el.classList.remove('on'),3500)}
+
+/* ---------- Pflichtfeld-Prüfung ---------- */
+const MATRE=/\bM\s?\d{1,2}(?:\.\d)?/gi;
+function checks(key){
+  const rule=meta[key].rule,text=(notes[key]||'').trim(),out=[],min=rule.min||0;
+  out.push([`mind. ${min} Zeichen (${Math.min(text.length,min)}/${min})`,text.length>=min]);
+  const mats=new Set((text.match(MATRE)||[]).map(m=>m.replace(/\s/g,'').toUpperCase()));
+  if(rule.mat)out.push(['Materialnummer genannt (z. B. M12)',mats.size>=1]);
+  if(rule.mats)out.push([`${rule.mats} verschiedene Materialien genannt (${Math.min(mats.size,rule.mats)}/${rule.mats})`,mats.size>=rule.mats]);
+  if(rule.num){const n=(text.replace(MATRE,'').replace(/\bS\.\s?\d+/g,'').match(/\d+(?:[.,]\d+)?/g)||[]).length;out.push([`${rule.num} Zahlenwerte als Beleg (${Math.min(n,rule.num)}/${rule.num})`,n>=rule.num])}
+  if(rule.lines){const n=text.split(/\n+/).filter(l=>l.trim().length>=6).length;out.push([`${rule.lines} Punkte, je eine Zeile (${Math.min(n,rule.lines)}/${rule.lines})`,n>=rule.lines])}
+  if(rule.ab)out.push(['Szenario A und B einbezogen',/szenari/i.test(text)&&/\bA\b/.test(text)&&/\bB\b/.test(text)]);
+  if(!rule.free){const letters=new Set(text.toLowerCase().replace(/[^a-zäöüß]/g,'')),words=text.split(/\s+/).filter(w=>/[a-zäöüß]{3,}/i.test(w)).length;out.push(['in ganzen Sätzen formuliert',letters.size>=12&&words>=Math.max(6,Math.floor(min/11))])}
+  const dup=text.length>20&&Object.entries(notes).some(([o,v])=>o!==key&&meta[o]&&(v||'').trim()===text);
+  if(text.length>20)out.push(['eigener Text, nicht aus einem anderen Feld kopiert',!dup]);
+  return out}
+const valid=key=>TEACHER||checks(key).every(c=>c[1]);
+function ehFor(key){if(!TEACHER||typeof EH==='undefined')return'';const t=EH[key]||EH[key.split('-')[0]];return t?`<details class="eh"><summary>Erwartungshorizont</summary><div>${t}</div></details>`:''}
+function field(key,label,rule,ph,name,hint=''){meta[key]={rule,name};return `<label for="f-${key}">${label}</label>${hint?`<p class="hint">${hint}</p>`:''}<textarea id="f-${key}" data-key="${key}" placeholder="${esc(ph)}" autocomplete="off">${esc(notes[key]||'')}</textarea><ul class="checks" id="c-${key}" aria-live="polite"></ul>${ehFor(key)}`}
+function grow(t){t.style.height='auto';t.style.height=Math.max(100,t.scrollHeight+4)+'px'}
+function drawChecks(key){const ul=document.getElementById('c-'+key);if(ul&&meta[key])ul.innerHTML=TEACHER||meta[key].rule.opt?'':checks(key).map(([l,ok])=>`<li class="${ok?'ok':''}">${l}</li>`).join('')}
+function bindFields(root,onChange){root.querySelectorAll('textarea[data-key]').forEach(t=>{const key=t.dataset.key;drawChecks(key);grow(t);t.oninput=()=>{notes[key]=t.value;grow(t);root.querySelectorAll('textarea[data-key]').forEach(x=>drawChecks(x.dataset.key));persist();onChange&&onChange()}})}
+function gate(keys,selKey,btn){
+  const missing=keys.filter(x=>!valid(x)).map(x=>meta[x].name);
+  if(selKey&&notes[selKey]==null)missing.unshift('Option wählen');
+  const total=keys.length+(selKey?1:0),done=total-missing.length,gc=$('#gcount');if(gc){gc.textContent=`${done}/${total}`;gc.parentNode.style.setProperty('--p',done/total)}
+  const ok=!missing.length,el=$('#missing');btn.disabled=!ok;
+  if(el){el.textContent=ok?'Alle Pflichtfelder sind ausgefüllt.':`Noch offen: ${missing.join(', ')}.`;el.classList.toggle('done',ok)}}
+
+/* ---------- Bausteine ---------- */
+const pageGuide='<div class="pageguide"><b>Buchseiten zum Nachschlagen</b><p>M6: S. 20 · M7 und M8: S. 21 · M9 und M10: S. 22 · M11 und M12: S. 23 · M13: S. 24–25 · Aufgaben: S. 25</p></div>';
+function messageBlock(i,s){const c=phaseContext[i],t=phaseTasks[i],body=s&&c.messageB?c.messageB:c.message;
+  if(t.type.startsWith('Newsticker'))return `<div class="ticker"><div class="tk-bar"><span class="live"><i></i>Live</span><span>${t.type}</span></div><div class="tk-src">${c.sender}</div><h3>${c.subject}</h3><p>${body}</p><small>Erfundene Meldung, keine tatsächliche Nachricht.</small></div>`;
+  const[from,to]=c.sender.split(' → ');
+  return `<div class="mail"><div class="mail-bar"><i></i><i></i><i></i><span>Posteingang · ${t.type}</span></div><div class="mail-head"><div><span>Von</span>${from}</div><div><span>An</span>${to||'Lea'}</div><div><span>Betreff</span><b>${c.subject.replace(/^Betreff:\s*/,'')}</b></div></div><div class="mail-body"><p>${body}</p><small>Erfundene Nachricht, keine tatsächliche Meldung oder Rechtsauskunft.</small></div></div>`}
+function chatBlock(i,s){const c=phaseContext[i],ch=s&&c.chatB?c.chatB:c.chat;return `<div class="phone"><div class="ph-head"><span class="av l">L</span><span class="av j">J</span><div><b>Lea & Jonas</b><small>fiktiver Chat</small></div></div><div class="ph-body"><div class="msg lea"><span class="av l">L</span><p><b class="sr">Lea: </b>${ch[0]}</p></div><div class="typing" aria-hidden="true"><i></i><i></i><i></i></div><div class="msg jonas"><p><b class="sr">Jonas: </b>${ch[1]}</p><span class="av j">J</span></div></div></div><div class="discuss"><span class="dq" aria-hidden="true">?</span><div><b>Diskutieren Sie zu zweit</b><p>${c.question}</p></div></div>`}
+function m13Block(i,key){const t=m13Tasks[i];return t?`<div class="material book"><div class="stamp" aria-hidden="true"><span>M13</span></div><div class="bk"><span class="tag">Vertiefung · ${t.book} (S. 25)</span><h3>${t.title}</h3><p class="quote">${t.chat}</p><p>${t.task}</p><p class="hint">${t.hint}</p>${field('m13-'+key,'M13-Erkenntnisse für Ihren Hefteintrag',t.rule,'Materialbefund · Zusammenhang · begründete Schlussfolgerung','M13-Notiz')}</div></div>`:''}
+const matsIn=t=>[...new Set(t.match(/M\d{1,2}/g)||[])];
+const matsOf=i=>[...new Set([...matsIn(phaseTasks[i].material),...(m13Tasks[i]?['M13']:[])])];
+function bookTask(t,key){return `<div class="material book"><div class="stamp" aria-hidden="true">${matsIn(t.material).map(m=>`<span>${m}</span>`).join('')}</div><div class="bk"><span class="tag">${t.level} · ${t.book}</span><h3>Schritt 1 · Buch auf: ${t.material}</h3><p>${t.task}</p>${field(key,'Materialnotiz für Ihren Hefteintrag',t.rule,'Materialbeleg · Erklärung · Erkenntnis fürs Heft','Materialnotiz')}</div></div>`}
+function srcCards(list){return `<div class="srcs"><div class="eyebrow accent">Quellen im Blick</div>${list.map(m=>{const q=SOURCES[m];return q?`<div class="src"><div class="src-top"><b>${m}</b><span>${q.page} · ${q.type}</span></div><p>${q.origin}</p><p class="src-y"><span>Stand</span>${q.year}</p><p class="src-l"><span>Aussagegrenze</span>${q.limit}</p></div>`:''}).join('')}</div>`}
+function kinetic(t){let n=0;return `<span class="sr">${t}</span><span aria-hidden="true">${t.split(' ').map(w=>`<span class="word">${[...w].map(c=>`<span class="ch" style="--i:${n++}">${esc(c)}</span>`).join('')}</span>`).join(' ')}</span>`}
+function lifeline(){const s=state.scenario,cur=['round','decided'].includes(state.view)?state.index:['between','results'].includes(state.view)?6:-1,L=state.logs[s];
+  return `<div class="lifeline" aria-hidden="true"><div class="ll-track"><i style="width:${Math.max(0,cur)/6*100}%"></i></div>${rounds.map((r,i)=>{const lg=L[i],cls=lg?(lg.carried?'carried':'done'):i===cur?'now':'';return `<span class="ll ${cls}" style="left:${i/6*100}%"><b></b><em>${r.age}</em></span>`}).join('')}</div>`}
+function opener(o){return `<section class="opener" data-band="${esc(o.band)}"><canvas aria-hidden="true"></canvas><div class="op-inner"><div class="op-kicker">${o.kicker}</div><h1 class="kin">${kinetic(o.title)}</h1>${o.chips&&o.chips.length?`<div class="op-chips">${o.chips.map(c=>`<span>${c}</span>`).join('')}</div>`:''}</div>${o.life===false?'':lifeline()}</section>`}
+function gateHtml(label){return `<div class="gate"><div class="g-ring" aria-hidden="true"><span id="gcount"></span></div><p class="missing" id="missing" aria-live="polite"></p><button id="confirm">${label}</button></div>`}
+const roles=i=>i%2?['Partner B','Partner A']:['Partner A','Partner B'];
+function choicesHtml(i,key,aChoice){return `<div class="choices" role="group" aria-label="Entscheidung wählen">${rounds[i].options.map((o,j)=>`<button class="choice" data-choice="${j}" aria-pressed="${notes['sel-'+key]===String(j)}"><b>${String.fromCharCode(65+j)}</b><span>${o[0]}<small>${o[1]}</small>${aChoice===j?'<em>In Szenario A gewählt</em>':''}</span></button>`).join('')}</div>`}
+let shownVals=null;
+function statRow(l,i,cls){const from=(shownVals||state.values)[i],to=state.values[i];return `<div class="${cls}"><div class="label"><span>${l}</span><b data-from="${from}" data-to="${to}">${from}/10</b></div><div class="bar"><span data-to="${to*10}" style="width:${from*10}%"></span></div></div>`}
+function stats(){return labels.map((l,i)=>statRow(l,i,'stat')).join('')}
+function mstatsHtml(){return `<div class="mstats" aria-hidden="true">${labels.map((l,i)=>statRow(l,i,'')).join('')}</div>`}
+function sourceSidebar(i){const c=phaseContext[i].side;let chart='';if(i===5)chart=`<div class="datachart" role="img" aria-label="Durchschnittliche Dauer der Elternzeit 2021 laut M11: Mütter 14,6 Monate, Väter 3,7 Monate"><div>Mütter · 14,6 Monate</div><div class="data-bar"><span style="width:100%"></span></div><div>Väter · 3,7 Monate</div><div class="data-bar"><span style="width:25.34%"></span></div></div>`;return `<section class="sourcecard"><div class="eyebrow accent">${c[0]}</div><h3>${c[1]}</h3><p>${c[2]}</p>${chart}<small><b>Lesetipp:</b> ${c[3]}</small><small class="sourceline">Quelle: Schulbuch, ${rounds[i].source}. Angaben gemäß Materialstand; keine Daten aus 2035.</small></section>`}
+const teacherBanner=()=>TEACHER?'<div class="teacher"><b>Lehrkraft-Version:</b> Pflichtfelder sind deaktiviert, der Erwartungshorizont ist unter den Feldern aufklappbar. Diese Datei nicht an Schülerinnen und Schüler geben.</div>':'';
+const optTitle=(r,c)=>rounds[r].options[c][0];
+const VAL_INFO=[['Finanzieller Spielraum','Einkommen abzüglich fester Kosten wie Miete.','ökonomische Bedingungen'],['Freie Zeit','Zeit neben Erwerbsarbeit, Pendeln und Betreuung.','Vereinbarkeit und Rollenverteilung'],['Berufliche Möglichkeiten','Qualifikation, Aufstieg und berufliche Sicherheit.','Ausbildung und Arbeitswelt'],['Unterstützung im Alltag','Hilfe durch Partner, Familie, Freunde und Betreuung.','Vereinbarkeit und Rollenverteilung']];
+function legend(){return `<details class="legend"><summary>Was bedeuten die Spielwerte?</summary><ul>${VAL_INFO.map(v=>`<li><b>${v[0]}:</b> ${v[1]} <span>Ursachennetz: ${v[2]}</span></li>`).join('')}</ul><p>Der Bereich <i>Werte und Lebensentwürfe</i> hat keinen eigenen Wert: Er steckt in Ihren Entscheidungen selbst.</p><p>Nutzen Sie die Werte, um Entscheidungen zu begründen und Nachteile zu erkennen. Man kann sie nicht „gewinnen“.</p></details>`}
+function shell(content,op){setStart(false);const r=rounds[state.index];app.innerHTML=`${teacherBanner()}${opener(op)}<div class="layout"><section class="panel main-panel">${mstatsHtml()}<div class="mlegend">${legend()}</div>${content}</section><aside class="panel dark side"><div class="eyebrow accent">Szenario ${state.scenario?'B · Unterstützung':'A · Hürden'} · Alter ${r.age}</div><div class="stats-wrap"><h3>Spielraum im Alltag</h3><div class="stats">${stats()}</div><small>Abstrakte Modellwerte, keine echten Messwerte. Ein hoher Wert ist kein „besseres Leben“.</small>${legend()}</div>${sourceSidebar(state.index)}${srcCards(op.mats||matsOf(state.index))}${pageGuide}</aside></div>`;window.scrollTo(0,0);afterRender()}
+function pauseNote(t){return `<div class="notice pause"><b>${t}</b><p>Ihr Stand wird auf diesem Gerät gespeichert. Sichern Sie zusätzlich, falls Sie an einem anderen Gerät weiterarbeiten oder automatisches Speichern nicht möglich ist.</p><button class="quiet" data-backup>Zwischenstand sichern</button></div>`}
+function bindPause(){$$('[data-backup]').forEach(b=>b.onclick=openSave)}
+function anreizeBox(){const t=(notes['e-anreize']||'').trim();return t?`<div class="notice"><b>Ihre Anreize aus dem Einstieg</b><p class="pre">${esc(t)}</p></div>`:`<div class="notice pause"><b>Ihre Anreize-Liste aus dem Einstieg fehlt noch.</b><p>Sie wird hier und in Aufgabe 5 gebraucht.</p><button class="quiet" data-intro>Einstieg öffnen</button></div>`}
+function bindIntroLinks(){$$('[data-intro]').forEach(b=>b.onclick=()=>renderIntro(true))}
+
+/* ---------- Werte ---------- */
+function replay(s){let v=[5,5,5,5];return state.logs[s].map(l=>{const i=l.round,pre=v.slice(),parts=[];
+  const step=(name,d)=>{if(!d||d.every(x=>!x))return;const b=v.slice();v=v.map((x,j)=>Math.min(10,Math.max(0,x+d[j])));parts.push({name,d:v.map((x,j)=>x-b[j])})};
+  step('Entscheidung',rounds[i].options[l.choice][2]);if(s&&bBonus[i])step('Bedingungen B',bBonus[i]);const ev=events.find(e=>e.after===i);if(ev)step('Ereignis',s?ev.bdelta:ev.delta);
+  return{round:i,pre,post:v.slice(),parts}})}
+const sgn=n=>n>0?'+'+n:'−'+Math.abs(n);
+function deltaBlock(sn){return `<div class="deltas"><h3>So verändern sich die Spielwerte</h3><div class="dtable">${labels.map((l,j)=>{const diff=sn.post[j]-sn.pre[j],why=sn.parts.filter(p=>p.d[j]).map(p=>`${p.name} ${sgn(p.d[j])}`);return `<div class="drow ${diff>0?'up':diff<0?'down':'same'}" style="--d:${j}"><span class="dname">${l}</span><span class="dval">${sn.pre[j]} → <b>${sn.post[j]}</b></span><span class="dwhy">${why.length?why.join(' · '):'unverändert'}</span></div>`}).join('')}</div><p class="hint"><b>Kurz besprechen:</b> Passt diese Veränderung zu dem, was die Materialien sagen? Wo vereinfacht das Modell?</p></div>`}
+function valueCharts(){const A=replay(0),B=replay(1),xs=['Start',...rounds.map(r=>r.age)],W=280,H=150,L=26,R=10,T=14,Bm=26,px=i=>L+i*(W-L-R)/7,py=v=>T+(10-v)*(H-T-Bm)/10;
+  const series=(S,j)=>[5,...S.map(s=>s.post[j])];
+  const line=(vals,cls)=>`<polyline class="${cls}" points="${vals.map((v,i)=>`${px(i).toFixed(1)},${py(v).toFixed(1)}`).join(' ')}"/>${vals.map((v,i)=>`<circle class="${cls}" cx="${px(i).toFixed(1)}" cy="${py(v).toFixed(1)}" r="3"/>`).join('')}`;
+  return `<div class="vcharts">${labels.map((l,j)=>{const a=series(A,j),b=series(B,j);return `<figure><figcaption><b>${l}</b><span>A ${a[7]} · B ${b[7]}</span></figcaption><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${l}: Szenario A ${a.join(', ')}; Szenario B ${b.join(', ')}">${[0,5,10].map(v=>`<line class="grid" x1="${L}" x2="${W-R}" y1="${py(v)}" y2="${py(v)}"/><text class="ax" x="${L-6}" y="${py(v)+4}" text-anchor="end">${v}</text>`).join('')}${xs.map((x,i)=>`<text class="ax" x="${px(i)}" y="${H-8}" text-anchor="middle">${x}</text>`).join('')}${line(a,'sa')}${line(b,'sb')}</svg></figure>`}).join('')}</div><p class="vlegend"><span class="ka"></span>Szenario A · Hürden <span class="kb"></span>Szenario B · Unterstützung</p>`}
+
+/* ---------- Ablauf ---------- */
+function setStart(on){document.body.classList.toggle('is-start',on);if(on)Band.stop();else Hero.stop()}
+function render(){({start,intro:()=>renderIntro(false),round:renderRound,decided:showDecision,between,results})[state.view]()}
+const MARQ=['Ausbildung oder Studium?','Hamburg · 400 km','Heiraten – oder nicht?','Kita bis 15 Uhr','Die Miete steigt','Elternzeit: wer?','Projektleitung annehmen?','Kinderwunsch','3.000 € oder Betreuung?','Befristeter Vertrag'];
+const ROLL=['die Gesellschaft?','die Kita?','die Miete?','der Arbeitgeber?','das Rollenbild?','der Staat?'];
+function splitLine(txt,li){let n=li*9;return `<span class="line" aria-hidden="true">${txt.split(' ').map(w=>`<span class="word">${[...w].map(c=>`<span class="ch" style="--i:${n++}">${esc(c)}</span>`).join('')}</span>`).join(' ')}</span>`}
+function whereText(){if(state.view==='intro')return'Einstieg';if(state.view==='between')return'Szenario A abgeschlossen';if(state.view==='results')return'Auswertung und Hefteintrag';return`Szenario ${state.scenario?'B':'A'} · Runde ${state.index+1} von 7${state.view==='decided'?' · Entscheidung getroffen':''}`}
+function start(){
+  setStart(true);const has=state.view!=='start';const m=MARQ.map(x=>`<span>${x}</span><span aria-hidden="true">✦</span>`).join('');
+  app.innerHTML=`${teacherBanner()}<section class="hero" id="hero"><canvas id="swarm" aria-hidden="true"></canvas>
+  <div class="hero-inner"><p class="kicker"><span class="dot"></span>Demografie-Labor · Kapitel 1.2 · S. 20–25</p>
+  <h1 class="kinetic"><span class="sr">Euer Leben. Eure Entscheidungen. Welche Rolle spielt die Gesellschaft?</span>${splitLine('Euer Leben.',0)}${splitLine('Eure Entscheidungen.',1)}<span class="line q" aria-hidden="true">Welche Rolle spielt <span class="roller"><span class="roll">${[...ROLL,ROLL[0]].map(w=>`<span>${w}</span>`).join('')}</span></span></span></h1>
+  <p class="caption" id="caption" aria-hidden="true"></p>
+  <div class="hero-actions">${has?`<button id="resume" class="big">Weiterspielen</button><button id="restart" class="ghost">Neu beginnen</button><p class="where">Gespeicherter Stand: ${whereText()}${savedAt?` · ${ago(savedAt)}`:''}</p>`:`<button id="startBtn" class="big">Lebensweg beginnen</button><button id="jumpIn" class="ghost">Schon angefangen? Kapitel wählen</button><p class="where">Fahren Sie mit Maus oder Finger über Buchstaben und Punkte.</p>`}</div></div>
+  <div class="marquee" aria-hidden="true"><div class="track">${m}${m}</div></div><div class="marquee m2" aria-hidden="true"><div class="track">${m}${m}</div></div></section>
+  <section class="prelude"><div class="prelude-inner">
+   <div><h2>So lange dauert das Spiel</h2><p>Rechnen Sie mit <b>vier bis fünf Unterrichtsstunden</b>. Das Spiel deckt den Einstieg (S. 20) und die Aufgaben 1–11 (S. 25) ab. Ihr Stand wird nach jeder Eingabe gespeichert.</p>
+    <div class="timebar" role="img" aria-label="Zeitanteile: Einstieg etwa 20 Minuten, Szenario A etwa 85, Szenario B etwa 30, Auswertung etwa 55, Ursachennetz und Sicherung etwa 25"><i class="te" style="flex:20"></i><i class="ta" style="flex:85"></i><i class="tb" style="flex:30"></i><i class="tc" style="flex:55"></i><i class="td" style="flex:25"></i></div>
+    <ol class="plan"><li><b>Stunde 1</b> Einstieg (M6, M7), Runden 1–2</li><li><b>Stunde 2</b> Runden 3–5</li><li><b>Stunde 3</b> Runden 6–7, Beginn Szenario B</li><li><b>Stunde 4</b> Szenario B, Aufgaben 1–3</li><li><b>Stunde 5</b> Aufgaben 4–7, Ursachennetz, Sicherung</li></ol></div>
+   <div><h2>Ihr Stand bleibt erhalten</h2><p>Alle Eingaben werden automatisch <b>nur auf diesem Gerät</b> gespeichert und nirgendwohin gesendet. Nach 21 Tagen ohne Nutzung werden sie gelöscht.</p><p>Über „Sichern“ erhalten Sie zusätzlich eine Datei oder einen <b>Sicherungscode</b>, den Sie z. B. in die Notizen-App kopieren. Über „Laden“ geht es damit an jedem Gerät weiter.</p><p>Schon mit einer älteren Version angefangen? Über <b>„Kapitel“</b> springen Sie dorthin, wo Sie aufgehört haben.</p><p class="hint">Keine Namen eintragen. Es geht um Lea und Jonas, nicht um Ihre eigene Lebensplanung.</p></div>
+   <div><h2>Auf dem iPad</h2><p>Am besten in Safari im Querformat. Mit „Split View“ können Sie das digitale Schulbuch daneben öffnen.</p><p>Mit dem Apple Pencil können Sie direkt in die Textfelder schreiben („Kritzeln“).</p><p>Gesicherte Dateien landen in der Dateien-App.</p></div>
+  </div></section>`;
+  if(has){$('#resume').onclick=render;$('#restart').onclick=async()=>{if(await ask('Neu beginnen? Alle gespeicherten Entscheidungen und Notizen auf diesem Gerät werden gelöscht.','Neu beginnen'))wipe()}}
+  else{$('#startBtn').onclick=()=>{state.view='intro';persist();renderIntro(false)};$('#jumpIn').onclick=openChapters}
+  window.scrollTo(0,0);Hero.start()}
+function renderIntro(fromMenu){
+  setStart(false);if(!fromMenu&&state.view==='start'){state.view='intro';persist()}const keys=introTasks.map(t=>t.key),back=fromMenu||state.intro||state.logs[0].length>0,f=t=>field(t.key,t.label,t.rule,t.ph,t.name,t.hint);
+  app.innerHTML=`${teacherBanner()}${opener({kicker:'Einstieg · S. 20–21 · Wertewandel und Vielfalt an Lebensentwürfen',title:'Weniger Kinder – und jetzt?',band:'1,58',life:false,chips:['M6 · S. 20','M7 · S. 21','Einstiegsaufgaben 1–3','Aufgabe 1']})}<div class="layout"><section class="panel main-panel"><p class="introline">Bevor Lea und Jonas starten, klären Sie das Problem: Wie hat sich die Bevölkerung entwickelt (M7), und was hält der Karikaturist von staatlichen Anreizen (M6)? Die Partikel oben zeigen die Geburtenrate 2022 laut Randspalte zu M7.</p>
+  <div class="material book"><div class="stamp" aria-hidden="true"><span>M6</span></div><div class="bk"><span class="tag">M6 (S. 20) · Karikatur · Einstiegsaufgaben</span>${f(introTasks[0])}${f(introTasks[1])}${f(introTasks[2])}</div></div>
+  <div class="material book"><div class="stamp" aria-hidden="true"><span>M7</span></div><div class="bk"><span class="tag">M7 (S. 21) · AFB II · Aufgabe 1</span>${f(introTasks[3])}</div></div>
+  ${gateHtml(back?'Zurück zum Spiel':'Weiter zu Runde 1')}</section>
+  <aside class="panel dark side"><div class="eyebrow accent">Einstieg</div><section class="sourcecard"><div class="eyebrow accent">M7 · Verlaufsgrafik</div><h3>Mehr Sterbefälle als Geburten</h3><p>Seit Anfang der 1970er-Jahre sterben in Deutschland jedes Jahr mehr Menschen, als geboren werden: Der natürliche Saldo ist negativ. Die Geburtenrate lag 2022 bei 1,58 – unter dem Richtwert von 2,1.</p><small><b>Lesetipp:</b> Unterscheiden Sie absolute Zahlen (Geburten, Sterbefälle) von der Geburtenrate (Kinder je Frau).</small></section>${srcCards(['M6','M7'])}${pageGuide}</aside></div>`;
+  window.scrollTo(0,0);afterRender();const btn=$('#confirm'),upd=()=>{if(back){btn.disabled=false;const n=keys.filter(valid).length;$('#gcount').textContent=`${n}/${keys.length}`;$('#gcount').parentNode.style.setProperty('--p',n/keys.length);$('#missing').textContent=n===keys.length?'Einstieg vollständig.':'Sie können den Einstieg auch später ergänzen.'}else gate(keys,null,btn)};
+  bindFields(app,upd);upd();
+  btn.onclick=()=>{if(keys.every(valid))state.intro=true;if(state.view==='intro'||state.view==='start'){state.view='round';state.index=0}persist();render()}}
+function renderRound(){state.view='round';persist();if(state.scenario)return roundB();roundA()}
+function roundA(){
+  const i=state.index,r=rounds[i],t=phaseTasks[i],key=k(0,i),[pa,pb]=roles(i),mats=matsOf(i);
+  shell(`<p class="introline">${r.story}</p>${messageBlock(i,0)}${chatBlock(i,0)}${i===6?anreizeBox():''}
+  ${bookTask(t,'note-'+key)}
+  ${m13Block(i,key)}
+  <div class="decide"><h3>Schritt 2 · Entscheidung</h3><p class="hint">${pa} begründet die Entscheidung, ${pb} nennt einen möglichen Nachteil.</p>${choicesHtml(i,key)}
+  ${field('reason-'+key,`Begründung der Entscheidung (${pa})`,RULES.reason,'Wir entscheiden uns für …, weil …',`Begründung (${pa})`)}
+  ${field('drawback-'+key,`Möglicher Nachteil (${pb})`,RULES.drawback,'Ein Nachteil könnte sein, dass … (Tipp: Welcher Spielwert würde sinken?)',`Nachteil (${pb})`)}</div>
+  ${gateHtml('Entscheidung bestätigen')}`,{kicker:`Szenario A · Hürden · Runde ${i+1} von 7`,title:r.title,band:String(r.age),chips:[`${r.age} Jahre`,...mats.map(m=>`${m} · ${SOURCES[m].page}`),t.book]});
+  bindIntroLinks();wireRound(key,['note-'+key,...(m13Tasks[i]?['m13-'+key]:[]),'reason-'+key,'drawback-'+key])}
+function roundB(){
+  const i=state.index,r=rounds[i],key=k(1,i),ka=k(0,i),[pa]=roles(i),aChoice=state.logs[0][i].choice,mats=matsIn(bPrompts[i]+' '+phaseTasks[i].material);
+  const carried=state.logs[1].filter(l=>l.carried&&l.round===i-1).map(l=>`<div class="notice carried">Die Phase „${rounds[l.round].title}“ (${rounds[l.round].age} Jahre) wurde aus Szenario A übernommen, weil sich die Bedingungen dort nicht unterscheiden. Entscheidung: ${optTitle(l.round,l.choice)}.</div>`).join('');
+  shell(`${carried}<p class="introline">${r.storyB||r.story}</p><div class="notice bchange"><div class="eyebrow">Was ist in Szenario B anders?</div><p>${bChange[i]}</p></div>${messageBlock(i,1)}${chatBlock(i,1)}${i===6?anreizeBox():''}
+  <details class="prev"><summary>Ihre Materialnotiz aus Szenario A (${phaseTasks[i].material})</summary><p>${esc(notes['note-'+ka]||'–')}</p></details>
+  <div class="material book"><div class="stamp" aria-hidden="true"><span>A</span><span>B</span></div><div class="bk"><span class="tag">Szenarienvergleich · AFB II</span><h3>Schritt 1 · Vergleichen</h3><p>${bPrompts[i]}</p>${field('cmp-'+key,'Vergleich von Szenario A und B',RULES.cmp,'In Szenario A … In Szenario B … Deshalb …','Vergleich A/B')}</div></div>
+  <div class="decide"><h3>Schritt 2 · Entscheidung</h3><p class="hint">Behalten Sie Ihre Entscheidung aus Szenario A bei, wenn die neuen Bedingungen Ihre Begründung nicht verändern. ${pa} begründet.</p>${choicesHtml(i,key,aChoice)}
+  ${field('reason-'+key,`Begründung: beibehalten oder geändert? (${pa})`,RULES.reason,'Wir behalten / ändern unsere Entscheidung, weil …',`Begründung (${pa})`)}</div>
+  ${gateHtml('Entscheidung bestätigen')}`,{kicker:`Szenario B · Unterstützung · Runde ${i+1} von 7`,title:r.title,band:r.age+'B',mats,chips:[`${r.age} Jahre`,'Vergleich A/B',...mats.map(m=>`${m} · ${SOURCES[m].page}`)]});
+  bindIntroLinks();wireRound(key,['cmp-'+key,'reason-'+key])}
+function wireRound(key,keys){
+  const sel='sel-'+key,btn=$('#confirm'),upd=()=>gate(keys,sel,btn);
+  bindFields(app,upd);
+  $$('[data-choice]').forEach(b=>b.onclick=()=>{notes[sel]=b.dataset.choice;$$('[data-choice]').forEach(x=>x.setAttribute('aria-pressed',x===b));persist();upd()});
+  btn.onclick=()=>{if(!btn.disabled)choose(Number(notes[sel]))};upd()}
+function apply(d){state.values=state.values.map((v,i)=>Math.min(10,Math.max(0,v+d[i])))}
+/* mode: undefined = normal, 'carried' = aus A übernommen, 'jumped' = per Kapitelsprung */
+function choose(c,mode){
+  const i=state.index,o=rounds[i].options[c];apply(o[2]);
+  if(state.scenario&&bBonus[i])apply(bBonus[i]);
+  if(i===3)state.firstWish=o[3];
+  const ev=events.find(e=>e.after===i);if(ev)apply(state.scenario?ev.bdelta:ev.delta);
+  state.logs[state.scenario].push({round:i,choice:c,carried:mode==='carried',jumped:mode==='jumped'});
+  if(mode==='jumped')state.view='decided';
+  if(!mode){state.view='decided';persist();showDecision()}}
+function showDecision(){
+  const l=state.logs[state.scenario][state.index],r=rounds[l.round],o=r.options[l.choice],ev=events.find(e=>e.after===l.round),S=state.scenario?'B':'A';
+  const pause=!state.scenario&&state.index===1?pauseNote('Ende von Stunde 1? Einstieg und Runden 1–2 sind geschafft.'):!state.scenario&&state.index===4?pauseNote('Ende von Stunde 2? Die Runden 3–5 sind geschafft.'):'';
+  shell(`<p class="introline">Besprechen Sie: Welche Möglichkeit eröffnet diese Entscheidung? Welche Schwierigkeit könnte entstehen?</p>${deltaBlock(replay(state.scenario)[state.index])}<div class="notice insight"><div class="eyebrow">Zusammenhang · ${r.source}</div><p class="factor">${r.factor}</p><p>${r.fact}</p></div>${ev?`<div class="evcard"><div class="ev-inner"><span class="ev-c">!</span><div class="eyebrow">Ereigniskarte</div><h3>${ev.title}</h3><p>${state.scenario?ev.better:ev.text}</p><span class="ev-c b">!</span></div></div>`:''}${pause}<div class="actions"><button id="next" class="big-next">${state.index===6?'Szenario auswerten':'Nächste Lebensphase'} →</button></div>`,
+   {kicker:`Entscheidung getroffen · Szenario ${S} · Runde ${l.round+1} · ${r.age} Jahre`,title:o[0],band:String.fromCharCode(65+l.choice),chips:[r.factor,`Material: ${r.source}`]});bindPause();
+  $('#next').onclick=()=>{if(state.index===6)finish();else{state.index++;advance()}}}
+function carrySkips(){while(state.scenario&&B_SKIP.includes(state.index)){choose(state.logs[0][state.index].choice,'carried');state.index++}}
+function advance(){carrySkips();renderRound()}
+function finishSilent(){const s=state.scenario;state.results[s]={values:[...state.values],wish:state.firstWish,final:state.logs[s][6].choice};state.view=s?'results':'between'}
+function finish(){finishSilent();persist();state.view==='results'?results():between()}
+function startBSilent(){Object.assign(state,{scenario:1,index:0,values:[5,5,5,5],firstWish:null,view:'round'});carrySkips()}
+function between(){
+  setStart(false);app.innerHTML=`${teacherBanner()}${opener({kicker:'Zwischenstopp · Szenario A abgeschlossen',title:'Gleiche Menschen. Andere Bedingungen.',band:'A→B',chips:['flexible Arbeit','verlässliche Betreuung','bezahlbarer Wohnraum']})}<section class="panel main-panel"><p class="introline">Sie haben sieben Entscheidungen getroffen. Jetzt startet derselbe Lebensweg erneut. Die Ereignisse bleiben vergleichbar, doch gesellschaftliche Unterstützung verändert ihre Folgen.</p><div class="notice"><b>Szenario B:</b> flexiblere Arbeitszeiten, verlässliche Kinderbetreuung und bezahlbarer Wohnraum. Die Phasen mit 19 und 27 Jahren ändern sich dadurch nicht und werden übernommen. In den übrigen fünf Phasen vergleichen Sie die Szenarien schriftlich.</div><div class="timeline">${state.logs[0].map(l=>`<p><b>${rounds[l.round].age} Jahre</b> · ${optTitle(l.round,l.choice)}</p>`).join('')}</div><p>Versuchen Sie zunächst, Ihre Entscheidungen beizubehalten. Ändern Sie sie nur, wenn die neuen Bedingungen Ihre Begründung verändern.</p>${pauseNote('Stand gesichert? Ein guter Moment für eine Sicherung.')}<div class="actions"><button id="scenarioB">Szenario B spielen</button></div></section>`;
+  window.scrollTo(0,0);afterRender();bindPause();$('#scenarioB').onclick=()=>{startBSilent();persist();renderRound()}}
+function wishText(r){return r.wish==='jetzt'?'Familiengründung ab 29 angestrebt':r.wish==='später'?'Familiengründung zunächst verschoben':'Zunächst ein Leben ohne Kinder geplant'}
+function results(){
+  setStart(false);const L=state.logs,changed=rounds.filter((_,i)=>!B_SKIP.includes(i)&&L[0][i].choice!==L[1][i].choice).length;
+  const task=t=>`${t.tag?`<span class="tag">${t.tag}</span>`:''}${t.id==='a5'?anreizeBox():''}${field(t.id,t.label,t.rule,t.ph,'Aufgabe '+t.id.slice(1),t.hint)}`;
+  app.innerHTML=`${teacherBanner()}${opener({kicker:'Auswertung · Aufgaben S. 25',title:'Was hat eure Entscheidungen verändert?',band:'A|B',chips:[`${changed} von 5 Entscheidungen geändert`,'Aufgaben 1–7','Ursachennetz']})}<section class="panel main-panel"><p class="introline">Vergleichen Sie beide Szenarien. Ein Unterschied zeigt einen Zusammenhang im Spielmodell. Er beweist noch keine Wirkung in der Realität.</p>
+  <div class="summary">${state.results.map((r,i)=>`<div class="panel ${i?'':'dark'}"><div class="eyebrow">Szenario ${i?'B · Unterstützung':'A · Hürden'}</div><h3>${wishText(r)}</h3><p>Mit 33: ${optTitle(6,r.final)}</p><small>Absichten, keine tatsächliche Kinderzahl oder Geburt.</small></div>`).join('')}</div>
+  <p><b>${changed} von 5 vergleichbaren Entscheidungen</b> haben Sie in Szenario B geändert.</p>
+  <h2>Verlauf der Spielwerte</h2>${valueCharts()}
+  <h2>Ihr Entscheidungsprotokoll</h2><div class="tablewrap"><table><thead><tr><th>Lebensphase</th><th>Szenario A</th><th>Szenario B</th></tr></thead><tbody>${rounds.map((r,i)=>`<tr><td>${r.age} · ${r.factor}</td><td>${optTitle(i,L[0][i].choice)}</td><td>${L[1][i].carried?'<i>übernommen</i>':optTitle(i,L[1][i].choice)+(L[0][i].choice!==L[1][i].choice?' <b>· geändert</b>':'')}</td></tr>`).join('')}</tbody></table></div>
+  ${pauseNote('Beide Szenarien sind gespielt – jetzt folgen die Aufgaben.')}
+  <h2>Vom Spiel zum Hefteintrag</h2>${pageGuide}<p>Öffnen Sie die Materialien M6–M13 (S. 20–25). Ihre Notizen aus den Lebensphasen finden Sie über „Kapitel“. Die Aufgaben entsprechen den Aufgaben auf S. 25.</p>
+  <div class="notice"><b>Überschrift im Heft:</b><br>Wertewandel und Vielfalt an Lebensentwürfen – Ursachen der Bevölkerungsentwicklung</div>
+  ${finalTasks.slice(0,2).map(task).join('')}
+  <h2>Ihr Hefteintrag: das Ursachennetz (vgl. Aufgabe 8)</h2><div class="notice"><p><b>Übertragen Sie Ihre Zuordnung aus Aufgabe 2 als Ursachennetz in Ihr Heft.</b></p><p>Schreiben Sie „Geburtenrückgang“ in die Mitte. Ordnen Sie die Ursachen nach Schäfers (M12) in vier Bereichen an: Werte und Lebensentwürfe, Ausbildung und Arbeitswelt, ökonomische Bedingungen, Vereinbarkeit und Rollenverteilung. Ergänzen Sie an jedem Pfeil die Belege aus M7–M11 mit Materialnummer. Kennzeichnen Sie zwei Faktoren aus Ihrem Spiel mit einem Stern.</p></div>
+  <label class="netz"><input type="checkbox" id="netz" ${notes.netz==='1'?'checked':''}>Wir haben das Ursachennetz mit mindestens fünf Ursachen, beschrifteten Pfeilen und Materialnummern im Heft erstellt.</label>
+  ${finalTasks.slice(2).map(task).join('')}
+  <details class="prev"><summary>Zusatz / Hausaufgabe (freiwillig): Aufgabe 5 und Förderaufgaben (F) von S. 25</summary><p>Aufgabe 5: Verfassen Sie einen Erklärtext von etwa 300 Wörtern zu M10, der auch die Ursachen für die Vielfalt an Lebensformen erklärt. Nutzen Sie Ihre Stichpunkte aus Runde 3.</p>${field('x5','Erklärtext zu M10 (freiwillig)',{min:0,free:1,opt:1},'Erklärtext …','Erklärtext')}<p class="hint" id="wc"></p><p>F zu Aufgabe 8 und F zu Aufgabe 9: siehe Randspalte S. 25.</p></details>
+  <div class="gate static"><div class="g-ring" aria-hidden="true"><span id="gcount"></span></div><p class="missing" id="missing" aria-live="polite"></p><div class="actions" style="margin-top:0"><button id="print">Drucken / als PDF</button><button id="txt">Hefteintrag sichern</button><button id="copyTxt" class="quiet">Text kopieren</button></div><textarea id="txtOut" class="sr" readonly aria-hidden="true" tabindex="-1"></textarea><p class="hint" id="txtMsg" aria-live="polite"></p></div>
+  <h3>Gemeinsame Sicherung</h3><p>Vergleichen Sie Ihr Ursachennetz mit dem eines anderen Paares: Sind die Ursachen durch Materialien belegt? Ist zwischen Spielmodell und Materialbefund unterschieden? Diskutieren Sie anschließend Aufgabe 6 (vgl. Aufgabe 11) in der Klasse.</p>
+  <div class="actions"><button class="quiet" id="again">Neues Spiel</button></div><p class="hint">Auf einem geteilten Gerät löschen Sie Ihre Eingaben am Ende über „Neues Spiel“ oder in der Spielinfo.</p></section>`;
+  window.scrollTo(0,0);afterRender();bindIntroLinks();bindPause();
+  const keys=finalTasks.map(t=>t.id),pr=$('#print'),tx=$('#txt'),cp=$('#copyTxt');
+  const wc=()=>{const n=(notes.x5||'').trim().split(/\s+/).filter(Boolean).length;$('#wc').textContent=n?`${n} Wörter`:''};
+  const upd=()=>{wc();const miss=keys.filter(x=>!valid(x)).map(x=>meta[x].name);if(notes.netz!=='1'&&!TEACHER)miss.push('Ursachennetz bestätigen');const ok=!miss.length,tot=keys.length+1,gc=$('#gcount');gc.textContent=`${tot-miss.length}/${tot}`;gc.parentNode.style.setProperty('--p',(tot-miss.length)/tot);pr.disabled=tx.disabled=cp.disabled=!ok;const m=$('#missing');m.textContent=ok?'Alle Aufgaben sind bearbeitet.':`Zum Drucken und Sichern noch offen: ${miss.join(', ')}.`;m.classList.toggle('done',ok)};
+  bindFields(app,upd);$('#netz').onchange=e=>{notes.netz=e.target.checked?'1':'';persist();upd()};upd();
+  pr.onclick=()=>{$$('textarea').forEach(grow);try{window.print()}catch(e){$('#txtMsg').textContent='Drucken ist hier gesperrt – bitte „Hefteintrag sichern“ oder „Text kopieren“.'}};
+  tx.onclick=()=>deliverFile(`Leben2035_Hefteintrag_${stamp()}.txt`,'text/plain;charset=utf-8',exportText(),t=>$('#txtMsg').textContent=t);
+  cp.onclick=async()=>{const ok=await copyText(exportText(),$('#txtOut'));$('#txtMsg').textContent=ok?'Hefteintrag kopiert – z. B. in Pages, Notizen oder mebis einfügen.':'Kopieren nicht möglich – bitte „Hefteintrag sichern“ nutzen.'};
+  $('#again').onclick=async()=>{if(await ask('Neues Spiel starten? Alle Entscheidungen und Notizen auf diesem Gerät werden gelöscht.','Neu starten'))wipe()}}
+function exportText(){
+  const L=[],n=x=>(notes[x]||'').trim()||'–',used=new Set(['netz']);const N=x=>{used.add(x);return n(x)};
+  L.push('LEBEN 2035 – HEFTEINTRAG','Wertewandel und Vielfalt an Lebensentwürfen – Ursachen der Bevölkerungsentwicklung','','===== EINSTIEG (S. 20–21) =====');
+  introTasks.forEach(t=>L.push('',t.label,N(t.key)));L.push('');
+  [0,1].forEach(s=>{L.push(`===== SZENARIO ${s?'B · Unterstützung':'A · Hürden'} =====`);state.logs[s].forEach(l=>{const r=rounds[l.round],key=k(s,l.round);used.add('sel-'+key);L.push('',`${r.age} Jahre · ${r.title}`,`Entscheidung: ${optTitle(l.round,l.choice)}${l.carried?' (aus A übernommen)':l.jumped?' (per Kapitelsprung übernommen)':''}`);if(l.carried)return;if(s)L.push('Vergleich A/B: '+N('cmp-'+key));else{L.push(`Materialnotiz (${phaseTasks[l.round].material}): `+N('note-'+key));if(m13Tasks[l.round])L.push('M13: '+N('m13-'+key))}L.push('Begründung: '+N('reason-'+key));if(!s)L.push('Nachteil: '+N('drawback-'+key))});L.push('')});
+  L.push('===== AUSWERTUNG (Aufgaben S. 25) =====');finalTasks.forEach(t=>L.push('',t.label,N(t.id)));
+  if((notes.x5||'').trim())L.push('','Zusatz · Erklärtext zu M10',N('x5'));
+  const extra=Object.entries(notes).filter(([key,v])=>!used.has(key)&&!/^sel-/.test(key)&&(v||'').trim());
+  if(extra.length){L.push('','===== WEITERE NOTIZEN AUS EINER FRÜHEREN VERSION =====');extra.forEach(([key,v])=>L.push('',key+': '+v.trim()))}
+  L.push('','Hinweis: Lea und Jonas sowie alle Spielwerte sind fiktiv. Die Materialbelege stammen aus dem Schulbuch.');return L.join('\n')}
+function wipe(){shownVals=null;try{localStorage.removeItem(STORE);localStorage.removeItem(OLD)}catch(e){}notes={};state=fresh();savedAt=null;showSaved();$$('dialog[open]').forEach(d=>d.close());start()}
+
+/* ---------- Kapitel: Übersicht, Nachlesen, Springen ---------- */
+const posOf=(s,i)=>s?8+i:i;
+function posNow(){switch(state.view){case'round':return posOf(state.scenario,state.index);case'decided':return posOf(state.scenario,state.index)+.5;case'between':return 7;case'results':return 15;default:return-1}}
+function chapterItems(){const items=[{id:'intro',label:'Einstieg · M6 und M7',sub:'Karikatur, Anreize, Aufgabe 1'}];
+  rounds.forEach((r,i)=>items.push({id:`r0-${i}`,s:0,i,pos:posOf(0,i),label:`Szenario A · Runde ${i+1}`,sub:`${r.age} Jahre · ${r.title} · ${phaseTasks[i].material.split(' · ')[0]}`}));
+  items.push({id:'between',pos:7,label:'Zwischenstopp',sub:'Szenario A abgeschlossen'});
+  rounds.forEach((r,i)=>{if(!B_SKIP.includes(i))items.push({id:`r1-${i}`,s:1,i,pos:posOf(1,i),label:`Szenario B · Runde ${i+1}`,sub:`${r.age} Jahre · ${r.title}`})});
+  items.push({id:'results',pos:15,label:'Auswertung',sub:'Aufgaben 1–7, Ursachennetz'});return items}
+function statusOf(it){const p=posNow();if(it.id==='intro')return state.intro?'done':state.view==='intro'?'now':introTasks.some(t=>(notes[t.key]||'').trim())?'begun':'open';
+  if(it.s!=null){if(state.logs[it.s][it.i])return'done';return Math.floor(p)===it.pos&&state.view==='round'?'now':'next'}
+  if(it.id==='between')return state.view==='between'?'now':p>7?'done':'next';
+  return state.view==='results'?'now':'next'}
+function openChapters(){chapterList();$('#chap').showModal()}
+function chapterList(){const lab={done:'✓ erledigt',now:'● aktuell',open:'offen',begun:'begonnen',next:'noch nicht gespielt'};
+  $('#chapContent').innerHTML=`<h2>Kapitel</h2><p>Erledigte Kapitel können Sie nachlesen und Notizen ergänzen. Zu späteren Kapiteln springen Sie, indem Sie die Entscheidungen der übersprungenen Lebensphasen angeben – zum Beispiel, wenn Sie in einer früheren Version schon weitergespielt haben.</p><div class="chaplist">${chapterItems().map(it=>{const st=statusOf(it);return `<button class="chap ${st}" data-ch="${it.id}"><span class="cl"><b>${it.label}</b><small>${it.sub}</small></span><span class="cs">${lab[st]}</span></button>`}).join('')}</div><p class="hint">Eine bereits getroffene Entscheidung lässt sich nicht nachträglich ändern, weil alle späteren Spielwerte darauf aufbauen.</p>`;
+  $$('[data-ch]').forEach(b=>b.onclick=()=>{const it=chapterItems().find(x=>x.id===b.dataset.ch),st=statusOf(it);
+    if(it.id==='intro'){$('#chap').close();renderIntro(state.view!=='start'&&state.view!=='intro')}
+    else if(st==='now'){$('#chap').close();render()}
+    else if(st==='done'&&it.s!=null)review(it.s,it.i);
+    else if(st==='done'){$('#chap').close();render()}
+    else jumpPicker(it)})}
+function neededFor(target){const p=posNow(),from=p<0?0:Math.ceil(p),out=[];
+  rounds.forEach((_,i)=>{const q=posOf(0,i);if(q>=from&&q<target&&!state.logs[0][i])out.push([0,i])});
+  rounds.forEach((_,i)=>{const q=posOf(1,i);if(!B_SKIP.includes(i)&&q>=from&&q<target&&!state.logs[1][i])out.push([1,i])});return out}
+function jumpPicker(it){const need=neededFor(it.pos),picks={},touchedB=new Set();
+  need.forEach(([s,i])=>{const pre=notes['sel-'+k(s,i)];if(pre!=null)picks[k(s,i)]=Number(pre);else if(s===1){const a=state.logs[0][i];if(a)picks[k(1,i)]=a.choice}else if(TEACHER)picks[k(s,i)]=0});
+  const row=([s,i])=>`<fieldset class="pick"><legend>${s?'Szenario B':'Szenario A'} · ${rounds[i].age} Jahre · ${rounds[i].title}</legend>${rounds[i].options.map((o,j)=>`<button class="pk" data-pk="${k(s,i)}" data-v="${j}" aria-pressed="${picks[k(s,i)]===j}"><b>${String.fromCharCode(65+j)}</b> ${o[0]}</button>`).join('')}</fieldset>`;
+  $('#chapContent').innerHTML=`<button class="quiet" id="backChap">← Alle Kapitel</button><h2>Springen zu: ${it.label}</h2>${need.length?`<p>Welche Entscheidungen hatten Sie in den übersprungenen Lebensphasen getroffen? Wenn Sie es nicht mehr wissen, wählen Sie die Option, die am besten passt. Notizen müssen Sie dafür nicht schreiben; sie erscheinen im Hefteintrag als „übernommen“.</p>${need.map(row).join('')}`:'<p>Es fehlen keine Entscheidungen.</p>'}<p class="hint">Den Einstieg können Sie jederzeit über „Kapitel“ nachholen.</p><div class="actions"><button id="doJump">Hierhin springen</button></div><p class="missing" id="jumpMsg"></p>`;
+  const upd=()=>{const miss=need.filter(([s,i])=>picks[k(s,i)]==null).length;$('#doJump').disabled=miss>0;$('#jumpMsg').textContent=miss?`Noch ${miss} Entscheidung${miss>1?'en':''} wählen.`:''};
+  const mark=(key,v)=>{picks[key]=v;$$(`[data-pk="${key}"]`).forEach(x=>x.setAttribute('aria-pressed',Number(x.dataset.v)===v))};
+  $$('[data-pk]').forEach(b=>b.onclick=()=>{const key=b.dataset.pk,v=Number(b.dataset.v);mark(key,v);if(key.startsWith('0-')){const bk='1-'+key.slice(2);if($(`[data-pk="${bk}"]`)&&!touchedB.has(bk))mark(bk,v)}else touchedB.add(key);upd()});
+  $('#backChap').onclick=chapterList;$('#doJump').onclick=()=>doJump(it.pos,picks);upd();$('#chap').scrollTop=0}
+function doJump(target,picks){
+  if(state.view==='start'||state.view==='intro'){state.view='round';state.index=0;state.scenario=0}
+  for(let g=0;g<60&&posNow()<target;g++){
+    if(state.view==='decided'){if(state.index===6){finishSilent();continue}state.index++;carrySkips();state.view='round';continue}
+    if(state.view==='between'){startBSilent();continue}
+    if(state.view==='round'){const c=picks[k(state.scenario,state.index)];if(c==null)break;notes['sel-'+k(state.scenario,state.index)]=String(c);choose(c,'jumped');continue}
+    break}
+  persist();$('#chap').close();render();toast('Kapitel geöffnet. Weiter geht’s!')}
+function review(s,i){const r=rounds[i],l=state.logs[s][i],key=k(s,i),ev=events.find(e=>e.after===i),t=phaseTasks[i],ro=x=>l.jumped?field(x,'Ergänzen',x.startsWith('drawback')?RULES.drawback:RULES.reason,'',x.startsWith('drawback')?'Nachteil':'Begründung'):`<div class="readonly">${esc(notes[x]||'–')}</div>`;
+  const body=s?`<h3>Vergleich von Szenario A und B</h3><p>${bPrompts[i]}</p>${field('cmp-'+key,'Vergleich ergänzen',RULES.cmp,'','Vergleich A/B')}<b>Begründung</b>${ro('reason-'+key)}`
+    :`<div class="material"><span class="tag">${t.level} · ${t.book}</span><h3>Buch auf: ${t.material}</h3><p>${t.task}</p>${field('note-'+key,'Materialnotiz ergänzen',t.rule,'','Materialnotiz')}</div>${m13Block(i,key)}<b>Begründung</b>${ro('reason-'+key)}<b>Nachteil</b>${ro('drawback-'+key)}`;
+  $('#chapContent').innerHTML=`<button class="quiet" id="backChap">← Alle Kapitel</button><div class="eyebrow">Szenario ${s?'B':'A'} · Alter ${r.age}</div><h2>${r.title}</h2>${l.jumped?'<div class="notice pause">Diese Phase wurde per Kapitelsprung übernommen. Sie können die Notizen hier nachtragen.</div>':''}<p>${s&&r.storyB?r.storyB:r.story}</p><div class="notice"><b>Ihre Entscheidung:</b> ${optTitle(i,l.choice)}</div>${messageBlock(i,s)}${chatBlock(i,s)}${body}<div class="notice"><b>${r.factor}</b><p>${r.fact}</p></div>${ev?`<div class="notice event"><b>${ev.title}</b><p>${s?ev.better:ev.text}</p></div>`:''}`;
+  bindFields($('#chapContent'));$('#backChap').onclick=chapterList;$('#chap').scrollTop=0}
+
+/* ---------- Effekte: Reveal, Zählwerke, Buchstaben-Farben, Kippen ---------- */
+const REDUCE=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function animateStats(){const go=()=>{$$('.bar span[data-to]').forEach(s=>s.style.width=s.dataset.to+'%');$$('b[data-to]').forEach(b=>{const a=+b.dataset.from,z=+b.dataset.to;if(a===z||REDUCE){b.textContent=z+'/10';return}b.classList.add(z>a?'up':'down');const t0=performance.now(),step=t=>{const q=Math.min(1,(t-t0)/700);b.textContent=Math.round(a+(z-a)*q)+'/10';if(q<1)requestAnimationFrame(step)};requestAnimationFrame(step)})};requestAnimationFrame(()=>requestAnimationFrame(go));shownVals=state.values.slice()}
+let rvIO=null;
+function reveal(){if(REDUCE||!('IntersectionObserver'in window))return;document.documentElement.classList.add('rv-on');rvIO&&rvIO.disconnect();
+  rvIO=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');rvIO.unobserve(en.target)}}),{rootMargin:'0px 0px -6% 0px'});
+  $$('main .mail, main .ticker, main .phone, main .discuss, main .material, main .decide, main .notice, main .deltas, main .evcard, main .vcharts figure, main .summary>.panel, main .src, main .sourcecard, main .timeline, main .tablewrap').forEach((el,n)=>{el.classList.add('rv');rvIO.observe(el)})}
+function afterRender(){const op=$('main .opener');op?Band.mount(op):Band.stop();animateStats();reveal()}
+const HUES=['#daff79','#7fd6ff','#ff9b5e','#ffd84d','#c9a4ff','#6ff0c0'];
+function heatG(c){c.style.setProperty('--hc',HUES[Math.random()*HUES.length|0]);c.classList.add('hot');clearTimeout(c._t);c._t=setTimeout(()=>c.classList.remove('hot'),650)}
+document.addEventListener('pointermove',e=>{const el=e.pointerType==='touch'?document.elementFromPoint(e.clientX,e.clientY):e.target;
+  if(el&&el.classList&&el.classList.contains('ch')&&el.closest('.kin'))heatG(el);
+  if(REDUCE||e.pointerType!=='mouse')return;const c=e.target.closest&&e.target.closest('.choice,.src,.evcard .ev-inner');if(!c)return;const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+  c.style.setProperty('--mx',x*100+'%');c.style.setProperty('--my',y*100+'%');c.style.transform=`perspective(900px) rotateX(${(.5-y)*5}deg) rotateY(${(x-.5)*7}deg) translateY(-2px)`},{passive:true});
+document.addEventListener('pointerout',e=>{const c=e.target.closest&&e.target.closest('.choice,.src,.evcard .ev-inner');if(c&&!c.contains(e.relatedTarget))c.style.transform=''},{passive:true});
+
+/* ---------- Kopfleiste ---------- */
+$('#chapters').onclick=openChapters;
+$('#closeChap').onclick=()=>$('#chap').close();
+$('#help').onclick=()=>$('#info').showModal();$('#closeHelp').onclick=()=>$('#info').close();
+$('#wipe').onclick=async()=>{$('#info').close();if(await ask('Alle Entscheidungen und Notizen auf diesem Gerät löschen?','Löschen'))wipe()};
+$('#saveState').onclick=openSave;$('#loadState').onclick=openLoad;
+if(TEACHER&&typeof EH!=='undefined'){const box=$('#ehAll');if(box){const rows=[...introTasks.map(t=>[t.label,t.key]),...phaseTasks.map((t,i)=>[`Runde ${i+1} · ${t.material}`,'note-0-'+i]),['Runde 3 · M13 (Aufgabe 9)','m13-0-2'],['Szenario B · Vergleiche','cmp'],...finalTasks.map(t=>[t.label,t.id]),['Zusatz · Aufgabe 5 Erklärtext','x5']];box.innerHTML='<h3>Erwartungshorizont (alle Aufgaben)</h3>'+rows.map(([l,key])=>`<div class="ehrow"><b>${l}</b><div>${EH[key]||''}</div></div>`).join('')}}
+/* ---------- Startseite: Partikel-Morphing + kinetische Typografie ---------- */
+const Hero=(()=>{
+  let cv,ctx,hero,W=0,H=0,dpr=1,P=[],forms=[],raf=0,phase=0,phaseT=0,last=0,capEl,timers=[],ro,run=false,labels3=null;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const pt={x:-9999,y:-9999},RR=150,R2=RR*RR;
+  const HUES=['#daff79','#7fd6ff','#ff9b5e','#ffd84d','#c9a4ff','#6ff0c0'];
+  function heat(c){if(!c.classList||!c.classList.contains('ch'))return;c.style.setProperty('--hc',HUES[Math.random()*HUES.length|0]);c.classList.add('hot');clearTimeout(c._t);c._t=setTimeout(()=>c.classList.remove('hot'),650)}
+  function heatAt(x,y){const el=document.elementFromPoint(x,y);if(el)heat(el)}
+  const CAPS=['Jeder Punkt ein Lebensweg.','Schematische Alterspyramide: unten jung, oben alt.','2035 – ein erfundenes Zukunftsjahr.','Zwei Szenarien. Ein Paar. Sieben Entscheidungen.'];
+  const DUR=[3200,5200,4600,5600];
+  const LIME=[218,255,121],BLUE=[150,205,228],WHITE=[255,255,255];
+  const rnd=(a,b)=>a+Math.random()*(b-a);
+  function box(){return W>=900?{x:W*.6,y:H*.1,w:W*.36,h:H*.62}:{x:W*.07,y:H*.55,w:W*.86,h:H*.27}}
+  function swarm(){return P.map(()=>({x:rnd(0,W),y:rnd(0,H),c:Math.random()<.15?BLUE:LIME}))}
+  function pyramid(b){
+    const K=[[0,.5],[10,.52],[20,.58],[30,.63],[40,.6],[50,.8],[58,.88],[65,.8],[72,.64],[80,.5],[88,.26],[95,.08],[100,.02]];
+    const prof=a=>{for(let i=1;i<K.length;i++)if(a<=K[i][0]){const[a0,v0]=K[i-1],[a1,v1]=K[i];return v0+(v1-v0)*(a-a0)/(a1-a0)}return 0};
+    const w=[];let sum=0;for(let a=0;a<100;a++){sum+=prof(a);w.push(sum)}
+    const pw=Math.min(b.w,b.h*1.25),cx=b.x+b.w/2,rows=Math.min(100,Math.floor(b.h/4));
+    return P.map((_,i)=>{const r=Math.random()*sum;let a=w.findIndex(v=>v>=r);const row=Math.floor(a/100*rows),side=i%2?1:-1;
+      return{x:cx+side*(pw*.012+Math.random()*prof(a)*pw*.48),y:b.y+b.h*(1-(row+.5)/rows),c:side<0?BLUE:LIME}})}
+  function text2035(b){
+    const oc=document.createElement('canvas'),s=2;oc.width=Math.max(10,b.w/s|0);oc.height=Math.max(10,b.h/s|0);const o=oc.getContext('2d');
+    const fs=Math.min(oc.height*.9,oc.width/2.35);o.font=`800 ${fs}px system-ui,-apple-system,Segoe UI,Arial,sans-serif`;o.textAlign='center';o.textBaseline='middle';o.fillStyle='#fff';o.fillText('2035',oc.width/2,oc.height/2);
+    const d=o.getImageData(0,0,oc.width,oc.height).data,pts=[];const step=Math.max(1,Math.round(Math.sqrt(oc.width*oc.height*.18/P.length)));
+    for(let y=0;y<oc.height;y+=step)for(let x=0;x<oc.width;x+=step)if(d[(y*oc.width+x)*4+3]>128)pts.push([x,y]);
+    for(let i=pts.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[pts[i],pts[j]]=[pts[j],pts[i]]}
+    return P.map((_,i)=>{const p=pts[i%Math.max(1,pts.length)]||[0,0];return{x:b.x+p[0]*s+rnd(-1,1),y:b.y+p[1]*s+rnd(-1,1),c:LIME}})}
+  const pathY=(b,t,sg)=>b.y+b.h/2+sg*b.h*.42*Math.sin(t*Math.PI*1.25)*Math.min(1,t*1.6);
+  function paths(b){return P.map((_,i)=>{const sg=i%2?1:-1,t=Math.random();return{x:b.x+t*b.w,y:pathY(b,t,sg)+rnd(-3,3),c:sg<0?BLUE:LIME}})}
+  function build(){const b=box();forms=[swarm(),pyramid(b),text2035(b),paths(b)];labels3=b}
+  function size(){
+    const r=hero.getBoundingClientRect();W=r.width;H=r.height;dpr=Math.min(2,window.devicePixelRatio||1);
+    cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n=Math.max(240,Math.min(720,Math.round(W*H/1700)));
+    if(P.length!==n)P=Array.from({length:n},()=>({x:rnd(0,W),y:rnd(0,H),vx:0,vy:0,r:rnd(1.1,2.3),ph:rnd(0,6.28),f:rnd(.4,1.2),c:[...LIME]}));
+    build();ctx.fillStyle='#112e36';ctx.fillRect(0,0,W,H)}
+  function setPhase(p){phase=p;phaseT=0;if(capEl){capEl.classList.remove('on');setTimeout(()=>{if(capEl){capEl.textContent=CAPS[p];capEl.classList.add('on')}},250)}}
+  function frame(now){
+    if(!run)return;const dt=Math.min(50,now-(last||now));last=now;phaseT+=dt;
+    if(phaseT>DUR[phase])setPhase((phase+1)%4);
+    const f=forms[phase],amp=phase===0?26:1.6,time=now/1000;
+    ctx.fillStyle='rgba(17,46,54,.34)';ctx.fillRect(0,0,W,H);
+    for(let i=0;i<P.length;i++){const p=P[i],t=f[i];
+      const tx=t.x+Math.sin(time*p.f+p.ph)*amp,ty=t.y+Math.cos(time*p.f*.8+p.ph)*amp;
+      p.vx=(p.vx+(tx-p.x)*.028)*.86;p.vy=(p.vy+(ty-p.y)*.028)*.86;
+      const dx=p.x-pt.x,dy=p.y-pt.y,d2=dx*dx+dy*dy;p.hot=0;if(d2<R2){const d=Math.sqrt(d2)+.5,f=(1-d/RR)**2*7.5;p.vx+=dx/d*f-dy/d*f*.45;p.vy+=dy/d*f+dx/d*f*.45;p.hot=1-d/RR}
+      p.x+=p.vx;p.y+=p.vy;
+      for(let j=0;j<3;j++)p.c[j]+=(t.c[j]-p.c[j])*.06;
+      const h=p.hot||0;ctx.fillStyle=h?`rgb(${p.c[0]+(255-p.c[0])*h|0},${p.c[1]+(255-p.c[1])*h|0},${p.c[2]+(255-p.c[2])*h|0})`:`rgb(${p.c[0]|0},${p.c[1]|0},${p.c[2]|0})`;ctx.beginPath();ctx.arc(p.x,p.y,p.r*(1+h*1.6),0,6.283);ctx.fill()}
+    if(pt.x>-999){ctx.strokeStyle='rgba(218,255,121,.35)';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(pt.x,pt.y,RR*.55+Math.sin(time*4)*4,0,6.283);ctx.stroke()}
+    if(phase===3)drawCouple(time);
+    raf=requestAnimationFrame(frame)}
+  function drawCouple(time){const b=labels3,a=Math.min(1,phaseT/700);ctx.globalAlpha=a;
+    ctx.font='700 15px system-ui,-apple-system,Segoe UI,Arial,sans-serif';ctx.fillStyle='#fff';ctx.textAlign='left';
+    ctx.fillText('19',b.x-6,b.y+b.h/2-14);ctx.textAlign='right';ctx.fillText('Szenario A · 33',b.x+b.w+4,pathY(b,1,-1)+26);ctx.fillText('Szenario B · 33',b.x+b.w+4,pathY(b,1,1)-14);
+    const t=(time*.16)%.94;[-1,1].forEach(sg=>{const x=b.x+t*b.w,y=pathY(b,t,sg);ctx.fillStyle='#fff';[-5,5].forEach(o=>{ctx.beginPath();ctx.arc(x+o,y,5,0,6.283);ctx.fill()});ctx.textAlign='center';ctx.fillText('Lea & Jonas',x,y+(y<b.y+b.h/2?-14:26))});
+    ctx.globalAlpha=1}
+  function still(){build();const f=forms[1];ctx.fillStyle='#112e36';ctx.fillRect(0,0,W,H);P.forEach((p,i)=>{const t=f[i];ctx.fillStyle=`rgb(${t.c.join(',')})`;ctx.beginPath();ctx.arc(t.x,t.y,p.r,0,6.283);ctx.fill()});if(capEl){capEl.textContent=CAPS[1];capEl.classList.add('on')}}
+  function burst(x,y){P.forEach(p=>{const dx=p.x-x,dy=p.y-y,d=Math.hypot(dx,dy)+1;if(d<260){const k=(260-d)/260*18;p.vx+=dx/d*k;p.vy+=dy/d*k}})}
+  const onMove=e=>{if(!cv)return;const r=cv.getBoundingClientRect();pt.x=e.clientX-r.left;pt.y=e.clientY-r.top;heatAt(e.clientX,e.clientY)};
+  const onLeave=()=>{pt.x=pt.y=-9999};
+  const onDown=e=>{if(e.target.closest('button'))return;onMove(e);if(!reduce)burst(pt.x,pt.y)};
+  const onVis=()=>{if(document.hidden){run=false;cancelAnimationFrame(raf)}else if(cv&&!reduce&&!run){run=true;last=0;raf=requestAnimationFrame(frame)}};
+  function roller(){const roll=hero.querySelector('.roll');if(!roll)return;const n=roll.children.length-1;let i=0;
+    timers.push(setInterval(()=>{i++;roll.style.transition='';roll.style.transform=`translateY(${-i*1.15}em)`;if(i===n)setTimeout(()=>{roll.style.transition='none';roll.style.transform='translateY(0)';i=0},750)},2300))}
+  function flips(){const h=hero.querySelector('.kinetic');timers.push(setTimeout(()=>{h.classList.add('done');const chs=[...h.querySelectorAll('.ch')];timers.push(setInterval(()=>{const c=chs[Math.random()*chs.length|0];c.classList.add('flip');setTimeout(()=>c.classList.remove('flip'),850)},1100))},2200))}
+  function start(){stop();hero=document.getElementById('hero');cv=document.getElementById('swarm');if(!cv)return;ctx=cv.getContext('2d');capEl=document.getElementById('caption');size();
+    ro=new ResizeObserver(()=>{size();if(reduce)still()});ro.observe(hero);
+    if(reduce){hero.querySelector('.kinetic').classList.add('done');still();hero.addEventListener('pointermove',e=>heatAt(e.clientX,e.clientY),{passive:true});return}
+    hero.addEventListener('pointermove',onMove,{passive:true});hero.addEventListener('pointerdown',onDown,{passive:true});hero.addEventListener('pointerleave',onLeave);hero.addEventListener('pointerup',e=>{if(e.pointerType==='touch')onLeave()});
+    document.addEventListener('visibilitychange',onVis);
+    setPhase(0);run=true;last=0;raf=requestAnimationFrame(frame);roller();flips()}
+  function stop(){run=false;cancelAnimationFrame(raf);timers.forEach(t=>{clearInterval(t);clearTimeout(t)});timers=[];ro&&ro.disconnect();ro=null;document.removeEventListener('visibilitychange',onVis);cv=null;capEl=null}
+  return{start,stop}})();
+
+/* ---------- Kapitel-Opener: Partikel formen Alter, Buchstaben oder Zahlen ---------- */
+const Band=(()=>{
+  let cv,ctx,host,W=0,H=0,dpr=1,P=[],T=[],raf=0,run=false,io,last=0,txt='',ro;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,pt={x:-9999,y:-9999},RR=130,R2=RR*RR;
+  const LIME=[218,255,121],BLUE=[150,205,228],BG='15,42,50';
+  const rnd=(a,b)=>a+Math.random()*(b-a);
+  function box(){return W>=760?{x:W*.56,y:H*.08,w:W*.4,h:H*.72}:{x:W*.08,y:H*.12,w:W*.84,h:H*.62}}
+  function targets(){const b=box(),oc=document.createElement('canvas'),s=2;oc.width=Math.max(10,b.w/s|0);oc.height=Math.max(10,b.h/s|0);const o=oc.getContext('2d');
+    const len=Math.max(1,[...txt].length);let fs=Math.min(oc.height*.92,oc.width/(len*.62));o.font=`800 ${fs}px system-ui,-apple-system,Segoe UI,Arial,sans-serif`;
+    while(o.measureText(txt).width>oc.width*.98&&fs>8){fs*=.92;o.font=`800 ${fs}px system-ui,-apple-system,Segoe UI,Arial,sans-serif`}
+    o.textAlign='center';o.textBaseline='middle';o.fillStyle='#fff';o.fillText(txt,oc.width/2,oc.height/2);
+    const d=o.getImageData(0,0,oc.width,oc.height).data,pts=[];const step=Math.max(1,Math.round(Math.sqrt(oc.width*oc.height*.2/P.length)));
+    for(let y=0;y<oc.height;y+=step)for(let x=0;x<oc.width;x+=step)if(d[(y*oc.width+x)*4+3]>128)pts.push([x,y]);
+    for(let i=pts.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[pts[i],pts[j]]=[pts[j],pts[i]]}
+    T=P.map((_,i)=>{const p=pts[i%Math.max(1,pts.length)]||[0,0],x=b.x+p[0]*s+rnd(-1.2,1.2),y=b.y+p[1]*s+rnd(-1.2,1.2);return{x,y,c:(x-b.x)/b.w<.5?LIME:BLUE}})}
+  function size(){const r=host.getBoundingClientRect();W=r.width;H=r.height;dpr=Math.min(2,window.devicePixelRatio||1);cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n=Math.max(160,Math.min(520,Math.round(W*H/520)));
+    if(P.length<n)for(let i=P.length;i<n;i++)P.push({x:rnd(0,W),y:rnd(0,H),vx:0,vy:0,r:rnd(1,2.1),ph:rnd(0,6.28),f:rnd(.4,1.1),c:[...LIME]});
+    if(P.length>n)P.length=n;
+    P.forEach(p=>{if(p.x>W||p.y>H){p.x=rnd(0,W);p.y=rnd(0,H)}});targets();ctx.fillStyle=`rgb(${BG})`;ctx.fillRect(0,0,W,H)}
+  function frame(now){if(!run)return;const time=now/1000;last=now;ctx.fillStyle=`rgba(${BG},.32)`;ctx.fillRect(0,0,W,H);
+    for(let i=0;i<P.length;i++){const p=P[i],t=T[i];const tx=t.x+Math.sin(time*p.f+p.ph)*1.6,ty=t.y+Math.cos(time*p.f*.8+p.ph)*1.6;
+      p.vx=(p.vx+(tx-p.x)*.03)*.85;p.vy=(p.vy+(ty-p.y)*.03)*.85;
+      const dx=p.x-pt.x,dy=p.y-pt.y,d2=dx*dx+dy*dy;p.h=0;if(d2<R2){const d=Math.sqrt(d2)+.5,f=(1-d/RR)**2*7;p.vx+=dx/d*f-dy/d*f*.4;p.vy+=dy/d*f+dx/d*f*.4;p.h=1-d/RR}
+      p.x+=p.vx;p.y+=p.vy;for(let j=0;j<3;j++)p.c[j]+=(t.c[j]-p.c[j])*.05;
+      const h=p.h;ctx.fillStyle=`rgb(${p.c[0]+(255-p.c[0])*h|0},${p.c[1]+(255-p.c[1])*h|0},${p.c[2]+(255-p.c[2])*h|0})`;ctx.beginPath();ctx.arc(p.x,p.y,p.r*(1+h*1.5),0,6.283);ctx.fill()}
+    if(pt.x>-999){ctx.strokeStyle='rgba(218,255,121,.3)';ctx.lineWidth=1.4;ctx.beginPath();ctx.arc(pt.x,pt.y,RR*.5+Math.sin(time*4)*3,0,6.283);ctx.stroke()}
+    raf=requestAnimationFrame(frame)}
+  function still(){ctx.fillStyle=`rgb(${BG})`;ctx.fillRect(0,0,W,H);P.forEach((p,i)=>{const t=T[i];p.x=t.x;p.y=t.y;ctx.fillStyle=`rgb(${t.c.join(',')})`;ctx.beginPath();ctx.arc(t.x,t.y,p.r,0,6.283);ctx.fill()})}
+  function go(){if(reduce||run||document.hidden||!cv)return;run=true;raf=requestAnimationFrame(frame)}
+  function halt(){run=false;cancelAnimationFrame(raf)}
+  const onMove=e=>{if(!cv)return;const r=cv.getBoundingClientRect();pt.x=e.clientX-r.left;pt.y=e.clientY-r.top};
+  const onLeave=()=>{pt.x=pt.y=-9999};
+  const onDown=e=>{if(e.target.closest('button,a')||reduce)return;onMove(e);P.forEach(p=>{const dx=p.x-pt.x,dy=p.y-pt.y,d=Math.hypot(dx,dy)+1;if(d<240){const k=(240-d)/240*16;p.vx+=dx/d*k;p.vy+=dy/d*k}})};
+  const onVis=()=>document.hidden?halt():go();
+  function mount(el){stop();host=el;cv=el.querySelector('canvas');if(!cv)return;ctx=cv.getContext('2d');txt=el.dataset.band||'';size();
+    if(reduce){still();return}
+    host.addEventListener('pointermove',onMove,{passive:true});host.addEventListener('pointerdown',onDown,{passive:true});host.addEventListener('pointerleave',onLeave);host.addEventListener('pointerup',e=>{if(e.pointerType==='touch')onLeave()});
+    document.addEventListener('visibilitychange',onVis);
+    ro=new ResizeObserver(()=>{if(cv){size()}});ro.observe(host);
+    io=new IntersectionObserver(es=>{es[0].isIntersecting?go():halt()});io.observe(host);go()}
+  function stop(){halt();io&&io.disconnect();ro&&ro.disconnect();io=ro=null;document.removeEventListener('visibilitychange',onVis);cv=null;host=null;onLeave()}
+  return{mount,stop}})();
+
+if(!restore())state=fresh();showSaved();start();
+</script></body></html>
